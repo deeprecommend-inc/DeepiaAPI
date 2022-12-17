@@ -1,5 +1,5 @@
 from rest_framework.permissions import IsAuthenticated
-from deep_log_api.auth import JWTAuthentication
+from deep_ai_api.auth import JWTAuthentication
 from user.models import User
 import jwt
 from .settings import SECRET_KEY

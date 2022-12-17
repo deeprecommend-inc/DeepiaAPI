@@ -1,6 +1,6 @@
 from django.http.response import JsonResponse
 from category.views import has_duplicates
-from deep_log_api.auth import JWTAuthentication
+from deep_ai_api.auth import JWTAuthentication
 from log.models import Log
 from log.serializers import LogSerializer
 from rest_framework.decorators import api_view, authentication_classes, permission_classes

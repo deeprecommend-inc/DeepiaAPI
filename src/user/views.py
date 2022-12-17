@@ -1,4 +1,4 @@
-from deep_log_api.auth import JWTAuthentication
+from deep_ai_api.auth import JWTAuthentication
 from user.models import User
 from user.serializers import UserSerializer
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
