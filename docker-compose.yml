@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  deep-log-api:
+    build: ./src
+    container_name: deep-log-api
+    command: bash -c "python3 manage.py runserver 0.0.0.0:8000 && python3 manage.py migrate"
+    volumes:
+      - ./src:/code
+    depends_on:
+      - deep-log-db
+    ports:
+      - 8000:8000
+    links:
+      - deep-log-db:deep-log-db
+    networks:
+      - defaultnetwork
+  deep-log-db:
+    image: postgres
+    container_name: deep-log-db
+    ports:
+      - 5432:5432
+    volumes:
+      - db-store:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - defaultnetwork
+  deep-log-web-server:
+    build: ./nginx/dev
+    container_name: deep-log-web-server
+    ports:
+      - 80:80
+    volumes:
+      - ./data/logs/nginx/:/var/log/nginx/
+    depends_on:
+      - deep-log-api
+    networks:
+      - defaultnetwork
+networks:
+  defaultnetwork:
+    driver: bridge
+volumes:
+  db-store:

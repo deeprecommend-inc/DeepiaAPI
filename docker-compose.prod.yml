@@ -1,0 +1,63 @@
+version: "3"
+
+services:
+  deep-log-api:
+    build: ./src
+    container_name: deep-log-api
+    command: bash -c "python3 manage.py runserver 0.0.0.0:8000 && python3 manage.py migrate"
+    volumes:
+      - ./src:/code
+    depends_on:
+      - deep-log-db
+    ports:
+      - 8000:8000
+    links:
+      - deep-log-db:deep-log-db
+    networks:
+      - defaultnetwork
+  deep-log-db:
+    image: postgres
+    container_name: deep-log-db
+    ports:
+      - 5432:5432
+    volumes:
+      - db-store:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - defaultnetwork
+  deep-log-web-server:
+    build: ./nginx/prod
+    container_name: deep-log-web-server
+    volumes:
+      - ./data/logs/nginx/:/var/log/nginx/
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    ports:
+      - 80:80
+      - 443:443
+    command: '/bin/sh -c ''while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g "daemon off;"'''
+    links:
+      - deep-log-api
+    depends_on:
+      - deep-log-api
+    networks:
+      - defaultnetwork
+  deep-log-ssl-certificate:
+    image: certbot/certbot
+    container_name: deep-log-ssl-certificate
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    depends_on:
+      - deep-log-web-server
+    networks:
+      - defaultnetwork
+networks:
+  defaultnetwork:
+    driver: bridge
+volumes:
+  db-store:
