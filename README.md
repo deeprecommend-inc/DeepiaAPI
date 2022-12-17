@@ -3,7 +3,7 @@
 
 **Table of Contents**
 
-- [DeepLog api](#deeplog-api)
+- [DeepAI api](#deepai-api)
   - [Base philosophy from The Zen of Python](#base-philosophy-from-the-zen-of-python)
   - [Installation](#installation)
   - [Running the app with docker](#running-the-app-with-docker)
@@ -12,11 +12,11 @@
   - [Issue](#issue)
   - [Resolve](#resolve)
   - [References](#references)
-- [DeepLogApi](#deeplogapi)
+- [DeepAIApi](#deepaiapi)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# DeepLog api
+# DeepAI api
 
 - python3
 - django3.2.8
@@ -122,5 +122,6 @@ $ python3 manage.py startapp <MODEL NAME>
 
 - https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
 
-# DeepLogApi
+# DeepAIApi
+
 # DeepAiApi

@@ -10,6 +10,3 @@ djangorestframework_simplejwt
 djangorestframework-jwt
 pyjwt==1.7.1
 django-sslserver
-opencv-python
-opencv-contrib-python
-opencv

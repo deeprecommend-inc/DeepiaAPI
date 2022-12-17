@@ -8,8 +8,8 @@ class CustomCorsMiddleware(MiddlewareMixin):
             response = HttpResponse()
             response['Access-Control-Allow-Origin'] = ','.join([
                 'http://localhost:3000',
-                'https://deep-log.net',
-                'https://www.deep-log.net',
+                'https://deep-ai.net',
+                'https://www.deep-ai.net',
             ])
             response['Access-Control-Allow-Headers'] = ', '.join([
                 'Content-Disposition',
@@ -34,8 +34,8 @@ class CustomCorsMiddleware(MiddlewareMixin):
     def process_response(self, request, response):
         response['Access-Control-Allow-Origin'] = ','.join([
             'http://localhost:3000',
-            'https://deep-log.net',
-            'https://www.deep-log.net',
+            'https://deep-ai.net',
+            'https://www.deep-ai.net',
         ])
         response['Content-Type'] = 'application/json'
         return response
