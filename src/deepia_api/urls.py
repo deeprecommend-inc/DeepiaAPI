@@ -4,7 +4,7 @@ import log.urls as log_urls
 import user.urls as user_urls
 import category.urls as category_urls
 import category_log.urls as category_log_urls
-from deep_ai_api import views
+from deepia_api import views
 
 urlpatterns = [
     path('api/category/', include(category_urls)),
