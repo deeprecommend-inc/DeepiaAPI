@@ -1,23 +1,23 @@
 version: "3"
 
 services:
-  deep-ai-api:
+  deepia-api:
     build: ./src
-    container_name: deep-ai-api
+    container_name: deepia-api
     command: bash -c "python3 manage.py runserver 0.0.0.0:8000 && python3 manage.py migrate"
     volumes:
       - ./src:/code
     depends_on:
-      - deep-ai-db
+      - deepia-db
     ports:
       - 8000:8000
     links:
-      - deep-ai-db:deep-ai-db
+      - deepia-db:deepia-db
     networks:
       - defaultnetwork
-  deep-ai-db:
+  deepia-db:
     image: postgres
-    container_name: deep-ai-db
+    container_name: deepia-db
     ports:
       - 5432:5432
     volumes:
@@ -28,15 +28,15 @@ services:
       - POSTGRES_PASSWORD=postgres
     networks:
       - defaultnetwork
-  deep-ai-web-server:
+  deepia-web-server:
     build: ./nginx/dev
-    container_name: deep-ai-web-server
+    container_name: deepia-web-server
     ports:
       - 80:80
     volumes:
       - ./data/logs/nginx/:/var/log/nginx/
     depends_on:
-      - deep-ai-api
+      - deepia-api
     networks:
       - defaultnetwork
 networks:

@@ -39,7 +39,7 @@ ALLOWED_HOSTS = [
     '172.27.17.252',
     '192.168.160.1',
     '0.0.0.0',
-    'deep-ai-api.xyz',
+    'deepia-api.xyz',
     'django',
 ]
 
@@ -70,8 +70,8 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
-    'https://deep-ai.net',
-    'https://www.deep-ai.net',
+    'https://deepia.net',
+    'https://www.deepia.net',
 ]
 
 CORS_ALLOW_HEADERS = [
@@ -92,8 +92,8 @@ CORS_ALLOW_METHODS = [
 
 CORS_ORIGIN_WHITELIST = [
     'localhost:3000',
-    'https://deep-ai.net',
-    'https://www.deep-ai.net',
+    'https://deepia.net',
+    'https://www.deepia.net',
 ]
 CORS_ALLOW_CREDENTIALS = True
 
@@ -145,7 +145,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': 'deep-ai-db',
+        'HOST': 'deepia-db',
         'PORT': 5432,
     },
 }

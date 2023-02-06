@@ -3,7 +3,7 @@
 
 **Table of Contents**
 
-- [DeepAI api](#deepai-api)
+- [Deepia api](#deepia-api)
   - [Base philosophy from The Zen of Python](#base-philosophy-from-the-zen-of-python)
   - [Installation](#installation)
   - [Running the app with docker](#running-the-app-with-docker)
@@ -12,11 +12,11 @@
   - [Issue](#issue)
   - [Resolve](#resolve)
   - [References](#references)
-- [DeepAIApi](#deepaiapi)
+- [DeepiaApi](#deepiaapi)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# DeepAI api
+# Deepia api
 
 - python3
 - django3.2.8
@@ -122,6 +122,6 @@ $ python3 manage.py startapp <MODEL NAME>
 
 - https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
 
-# DeepAIApi
+# DeepiaApi
 
 # DeepAiApi

@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(deep-ai-api.xyz)
+domains=(deepia-api.xyz)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="deeprecommend@gmail.com"
@@ -33,19 +33,19 @@ docker-compose -f docker-compose.prod.yml run --rm --entrypoint "\
   openssl req -x509 -nodes -newkey rsa:$rsa_key_size -days 1\
     -keyout '$path/privkey.pem' \
     -out '$path/fullchain.pem' \
-    -subj '/CN=localhost'" deep-ai-ssl-certificate
+    -subj '/CN=localhost'" deepia-ssl-certificate
 echo
 
 
 echo "### Starting nginx ..."
-docker-compose -f docker-compose.prod.yml up --force-recreate -d deep-ai-web-server
+docker-compose -f docker-compose.prod.yml up --force-recreate -d deepia-web-server
 echo
 
 echo "### Deleting dummy certificate for $domains ..."
 docker-compose -f docker-compose.prod.yml run --rm --entrypoint "\
   rm -Rf /etc/letsencrypt/live/$domains && \
   rm -Rf /etc/letsencrypt/archive/$domains && \
-  rm -Rf /etc/letsencrypt/renewal/$domains.conf" deep-ai-ssl-certificate
+  rm -Rf /etc/letsencrypt/renewal/$domains.conf" deepia-ssl-certificate
 echo
 
 
@@ -66,13 +66,13 @@ esac
 if [ $staging != "0" ]; then staging_arg="--staging"; fi
 
 docker-compose -f docker-compose.prod.yml run --rm --entrypoint "\
-  certbot certonly --webroot -w /var/www/certbot -d deep-ai-api.xyz \
+  certbot certonly --webroot -w /var/www/certbot -d deepia-api.xyz \
     $staging_arg \
     $email_arg \
     --rsa-key-size $rsa_key_size \
     --agree-tos \
-    --force-renewal" deep-ai-ssl-certificate
+    --force-renewal" deepia-ssl-certificate
 echo
 
 echo "### Reloading nginx ..."
-docker-compose -f docker-compose.prod.yml exec deep-ai-web-server nginx -s reload
+docker-compose -f docker-compose.prod.yml exec deepia-web-server nginx -s reload
