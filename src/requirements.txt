@@ -11,6 +11,3 @@ djangorestframework-jwt
 pyjwt==1.7.1
 django-sslserver
 numpy==1.16.5
-opencv-python
-pillow
-tensorflow==1.14.0
