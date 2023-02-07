@@ -1,5 +1,4 @@
 from django.db import models
-from content.models import Log
 
 
 class User(models.Model):
