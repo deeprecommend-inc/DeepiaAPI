@@ -105,46 +105,46 @@ def content_remover(request):
     return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-@api_view(['PUT'])
-@authentication_classes([JWTAuthentication, ])
-@permission_classes([IsAuthenticated, ])
-def content_drag_and_drop(request):
-    if request.method == 'PUT':
-        source = Content.objects.get(id=request.data["source_id"])
-        target = Content.objects.get(id=request.data["target_id"])
-        update_source = Content.objects.get(id=request.data["source_id"])
-        update_target = Content.objects.get(id=request.data["target_id"])
-        category_id =  request.data["category_id"]
+# @api_view(['PUT'])
+# @authentication_classes([JWTAuthentication, ])
+# @permission_classes([IsAuthenticated, ])
+# def content_drag_and_drop(request):
+#     if request.method == 'PUT':
+#         source = Content.objects.get(id=request.data["source_id"])
+#         target = Content.objects.get(id=request.data["target_id"])
+#         update_source = Content.objects.get(id=request.data["source_id"])
+#         update_target = Content.objects.get(id=request.data["target_id"])
+#         category_id =  request.data["category_id"]
         
-        update_source.index = target.index
-        update_target.index = source.index
+#         update_source.index = target.index
+#         update_target.index = source.index
 
-        update_source.save()
-        update_target.save()
+#         update_source.save()
+#         update_target.save()
 
-        if category_id == None:
-            contents = Content.objects.filter(user_id=request.user.id)
-            for i, content in enumerate(contents):
-                content_indices = Content.objects.filter(user_id=request.user.id).values_list('index', flat=True)
-                if content.index == None or has_duplicates(content_indices):
-                    new_content = {
-                        "title": content.title,
-                        "memo": content.memo,
-                        "link": content.link,
-                        "user_id": content.user_id,
-                        "index": 0 if i == 0 else max(filter(null_check, content_indices)) + 1,
-                    }
-                    serializer = ContentSerializer(content, data=new_content)
-                    if serializer.is_valid():
-                        serializer.save()
+#         if category_id == None:
+#             contents = Content.objects.filter(user_id=request.user.id)
+#             for i, content in enumerate(contents):
+#                 content_indices = Content.objects.filter(user_id=request.user.id).values_list('index', flat=True)
+#                 if content.index == None or has_duplicates(content_indices):
+#                     new_content = {
+#                         "title": content.title,
+#                         "memo": content.memo,
+#                         "link": content.link,
+#                         "user_id": content.user_id,
+#                         "index": 0 if i == 0 else max(filter(null_check, content_indices)) + 1,
+#                     }
+#                     serializer = ContentSerializer(content, data=new_content)
+#                     if serializer.is_valid():
+#                         serializer.save()
 
-            contents_have_index = Content.objects.filter(user_id=request.user.id).order_by('-index')
-            serializer = ContentSerializer(contents_have_index, many=True)
-            response = Response(serializer.data)
-            return response
-        else:
-            category = Category.objects.get(id=category_id)
-            category_contents = category.content_set.all().order_by('-index')
-            serializer = ContentSerializer(category_contents, many=True)
-            response = Response(serializer.data)
-            return response
+#             contents_have_index = Content.objects.filter(user_id=request.user.id).order_by('-index')
+#             serializer = ContentSerializer(contents_have_index, many=True)
+#             response = Response(serializer.data)
+#             return response
+#         else:
+#             category = Category.objects.get(id=category_id)
+#             category_contents = category.content_set.all().order_by('-index')
+#             serializer = ContentSerializer(category_contents, many=True)
+#             response = Response(serializer.data)
+#             return response

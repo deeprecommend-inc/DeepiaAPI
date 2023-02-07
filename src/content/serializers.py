@@ -1,12 +1,12 @@
 from django.db.models import fields
 from rest_framework import serializers
-from log.models import Log
+from content.models import Content
 from category.serializers import CategorySerializer
 
 
-class LogSerializer(serializers.ModelSerializer):
+class ContentSerializer(serializers.ModelSerializer):
     # categories = CategorySerializer(many=True)
     
     class Meta:
-        model = Log
+        model = Content
         fields = '__all__'

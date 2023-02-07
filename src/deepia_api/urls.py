@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework import routers
-import log.urls as log_urls
+import content.urls as log_urls
 import user.urls as user_urls
 import category.urls as category_urls
 import category_log.urls as category_log_urls

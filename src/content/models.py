@@ -1,7 +1,7 @@
 from django.db import models
 from category.models import Category
 
-class Log(models.Model):
+class Content(models.Model):
     title = models.CharField(
         max_length=128, blank=False, null=False)
     memo = models.CharField(
