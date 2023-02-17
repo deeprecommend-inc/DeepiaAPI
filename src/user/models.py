@@ -8,6 +8,7 @@ class User(models.Model):
     # userid = models.CharField(unique=True, blank=True, null=True)
     image = models.TextField(blank=True, null=True)
     email = models.EmailField(unique=True, blank=False, null=False)
+    following = models.ManyToManyField("self", related_name="followed_by", symmetrical=False,blank=True)
     password = models.CharField(max_length=128, blank=False, null=False, default='')
 
     def __str__(self):
