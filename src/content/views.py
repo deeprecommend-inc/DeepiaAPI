@@ -27,9 +27,11 @@ def content_list(request):
         return response
 
     if request.method == 'POST':
+        # titleから画像を生成
+        # deliverablesに保存
         new_content = {
             "title": request.data["title"],
-            "deliverables": request.data["deliverables"],
+            "deliverables": '',
             "category_id": request.data["category_id"],
             "user_id": request.user.id,
         }
@@ -37,7 +39,6 @@ def content_list(request):
         if serializer.is_valid():
             saved = serializer.save()
             content = Content.objects.get(id=saved.id)
-            content.categories.set(request.data['category_ids'])
             content.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
