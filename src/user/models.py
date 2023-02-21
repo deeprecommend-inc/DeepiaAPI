@@ -3,9 +3,9 @@ from django.db import models
 
 
 class User(models.Model):
-    name = models.CharField(max_length=32, blank=False, null=False)
+    name = models.CharField(max_length=24, blank=False, null=False)
+    # username = models.CharField(max_length=30, blank=True, null=True)
     bio = models.TextField(max_length=80, blank=True, null=True)
-    # userid = models.CharField(unique=True, blank=True, null=True)
     image = models.TextField(blank=True, null=True)
     email = models.EmailField(unique=True, blank=False, null=False)
     following = models.ManyToManyField("self", related_name="followed_by", symmetrical=False,blank=True)

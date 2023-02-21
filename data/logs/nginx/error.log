@@ -1665,3 +1665,1752 @@
 2023/02/17 21:08:41 [notice] 1#1: signal 17 (SIGCHLD) received from 20
 2023/02/17 21:08:41 [notice] 1#1: worker process 20 exited with code 0
 2023/02/17 21:08:41 [notice] 1#1: exit
+2023/02/17 21:09:02 [notice] 1#1: using the "epoll" event method
+2023/02/17 21:09:02 [notice] 1#1: nginx/1.23.3
+2023/02/17 21:09:02 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/17 21:09:02 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/17 21:09:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/17 21:09:02 [notice] 1#1: start worker processes
+2023/02/17 21:09:02 [notice] 1#1: start worker process 20
+2023/02/17 21:09:02 [notice] 1#1: start worker process 21
+2023/02/17 21:09:02 [notice] 1#1: start worker process 22
+2023/02/17 21:09:02 [notice] 1#1: start worker process 23
+2023/02/17 21:09:02 [notice] 1#1: start worker process 24
+2023/02/17 21:09:02 [notice] 1#1: start worker process 25
+2023/02/17 21:09:02 [notice] 1#1: start worker process 26
+2023/02/17 21:09:02 [notice] 1#1: start worker process 27
+2023/02/17 21:09:02 [notice] 1#1: start worker process 28
+2023/02/17 21:09:02 [notice] 1#1: start worker process 29
+2023/02/17 21:09:02 [notice] 1#1: start worker process 30
+2023/02/17 21:09:02 [notice] 1#1: start worker process 31
+2023/02/17 21:09:02 [notice] 1#1: start worker process 32
+2023/02/17 21:09:02 [notice] 1#1: start worker process 33
+2023/02/17 21:09:02 [notice] 1#1: start worker process 34
+2023/02/17 21:09:02 [notice] 1#1: start worker process 35
+2023/02/18 10:37:23 [warn] 25#25: *25 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 12:21:12 [warn] 30#30: *48 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 12:36:59 [warn] 32#32: *55 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 12:49:57 [warn] 33#33: *65 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:10:15 [warn] 20#20: *98 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:21:16 [warn] 20#20: *111 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:21:41 [warn] 20#20: *111 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000007, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:21:50 [warn] 20#20: *111 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000008, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:21:56 [warn] 20#20: *111 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000009, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:22:00 [warn] 20#20: *111 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000010, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:23:03 [warn] 20#20: *111 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:23:09 [warn] 20#20: *111 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000012, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 13:52:39 [warn] 20#20: *173 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/18 21:25:36 [warn] 21#21: *207 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 08:34:43 [warn] 21#21: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 08:35:13 [warn] 21#21: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 08:35:14 [warn] 21#21: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 08:35:16 [warn] 21#21: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/01/0000000018 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 08:35:16 [warn] 21#21: *264 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/01/0000000019 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 16:24:55 [warn] 22#22: *354 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/02/0000000020 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 16:33:01 [warn] 22#22: *360 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/02/0000000021 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 16:58:15 [warn] 22#22: *377 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/02/0000000022 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:04:47 [warn] 22#22: *393 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/02/0000000023 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:16:01 [warn] 23#23: *405 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000024, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:16:09 [warn] 23#23: *405 a client request body is buffered to a temporary file /var/cache/nginx/client_temp/0000000025, client: 172.19.0.1, server: deepia-api.xyz, request: "PUT /api/user/1/ HTTP/1.1", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:16:09 [warn] 23#23: *405 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/02/0000000026 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:26:03 [warn] 23#23: *423 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/02/0000000027 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 17:38:52 [warn] 23#23: *443 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/02/0000000028 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/19 18:13:50 [warn] 23#23: *450 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/02/0000000029 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 15:56:24 [warn] 24#24: *585 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/03/0000000030 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 17:59:22 [warn] 24#24: *589 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/03/0000000031 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 18:04:45 [warn] 24#24: *595 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/03/0000000032 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 19:37:05 [warn] 25#25: *663 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/03/0000000033 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 20:23:34 [warn] 25#25: *691 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/03/0000000034 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 20:39:07 [warn] 25#25: *736 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/03/0000000035 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 20:39:15 [warn] 25#25: *736 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/03/0000000036 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/20 21:44:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 21:44:55 [notice] 20#20: gracefully shutting down
+2023/02/20 21:44:55 [notice] 21#21: gracefully shutting down
+2023/02/20 21:44:55 [notice] 22#22: gracefully shutting down
+2023/02/20 21:44:55 [notice] 20#20: exiting
+2023/02/20 21:44:55 [notice] 21#21: exiting
+2023/02/20 21:44:55 [notice] 23#23: gracefully shutting down
+2023/02/20 21:44:55 [notice] 24#24: gracefully shutting down
+2023/02/20 21:44:55 [notice] 22#22: exiting
+2023/02/20 21:44:55 [notice] 25#25: gracefully shutting down
+2023/02/20 21:44:55 [notice] 23#23: exiting
+2023/02/20 21:44:55 [notice] 20#20: exit
+2023/02/20 21:44:55 [notice] 21#21: exit
+2023/02/20 21:44:55 [notice] 24#24: exiting
+2023/02/20 21:44:55 [notice] 26#26: gracefully shutting down
+2023/02/20 21:44:55 [notice] 22#22: exit
+2023/02/20 21:44:55 [notice] 27#27: gracefully shutting down
+2023/02/20 21:44:55 [notice] 25#25: exiting
+2023/02/20 21:44:55 [notice] 23#23: exit
+2023/02/20 21:44:55 [notice] 26#26: exiting
+2023/02/20 21:44:55 [notice] 24#24: exit
+2023/02/20 21:44:55 [notice] 28#28: gracefully shutting down
+2023/02/20 21:44:55 [notice] 27#27: exiting
+2023/02/20 21:44:55 [notice] 29#29: gracefully shutting down
+2023/02/20 21:44:55 [notice] 25#25: exit
+2023/02/20 21:44:55 [notice] 26#26: exit
+2023/02/20 21:44:55 [notice] 30#30: gracefully shutting down
+2023/02/20 21:44:55 [notice] 28#28: exiting
+2023/02/20 21:44:55 [notice] 27#27: exit
+2023/02/20 21:44:55 [notice] 29#29: exiting
+2023/02/20 21:44:55 [notice] 31#31: gracefully shutting down
+2023/02/20 21:44:55 [notice] 32#32: gracefully shutting down
+2023/02/20 21:44:55 [notice] 30#30: exiting
+2023/02/20 21:44:55 [notice] 28#28: exit
+2023/02/20 21:44:55 [notice] 29#29: exit
+2023/02/20 21:44:55 [notice] 32#32: exiting
+2023/02/20 21:44:55 [notice] 31#31: exiting
+2023/02/20 21:44:55 [notice] 30#30: exit
+2023/02/20 21:44:55 [notice] 32#32: exit
+2023/02/20 21:44:55 [notice] 31#31: exit
+2023/02/20 21:44:55 [notice] 35#35: gracefully shutting down
+2023/02/20 21:44:55 [notice] 33#33: gracefully shutting down
+2023/02/20 21:44:55 [notice] 33#33: exiting
+2023/02/20 21:44:55 [notice] 35#35: exiting
+2023/02/20 21:44:55 [notice] 33#33: exit
+2023/02/20 21:44:55 [notice] 35#35: exit
+2023/02/20 21:44:55 [notice] 34#34: gracefully shutting down
+2023/02/20 21:44:55 [notice] 34#34: exiting
+2023/02/20 21:44:55 [notice] 34#34: exit
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 21:44:55 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/20 21:44:55 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 21:44:55 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 21:44:55 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/20 21:44:55 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/20 21:44:55 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/20 21:44:55 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 21:44:55 [notice] 1#1: exit
+2023/02/20 21:45:00 [notice] 1#1: using the "epoll" event method
+2023/02/20 21:45:00 [notice] 1#1: nginx/1.23.3
+2023/02/20 21:45:00 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 21:45:00 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 21:45:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 21:45:00 [notice] 1#1: start worker processes
+2023/02/20 21:45:00 [notice] 1#1: start worker process 20
+2023/02/20 21:45:00 [notice] 1#1: start worker process 21
+2023/02/20 21:45:00 [notice] 1#1: start worker process 22
+2023/02/20 21:45:00 [notice] 1#1: start worker process 23
+2023/02/20 21:45:00 [notice] 1#1: start worker process 24
+2023/02/20 21:45:00 [notice] 1#1: start worker process 25
+2023/02/20 21:45:00 [notice] 1#1: start worker process 26
+2023/02/20 21:45:00 [notice] 1#1: start worker process 27
+2023/02/20 21:45:00 [notice] 1#1: start worker process 28
+2023/02/20 21:45:00 [notice] 1#1: start worker process 29
+2023/02/20 21:45:00 [notice] 1#1: start worker process 30
+2023/02/20 21:45:00 [notice] 1#1: start worker process 31
+2023/02/20 21:45:00 [notice] 1#1: start worker process 32
+2023/02/20 21:45:00 [notice] 1#1: start worker process 33
+2023/02/20 21:45:00 [notice] 1#1: start worker process 34
+2023/02/20 21:45:00 [notice] 1#1: start worker process 35
+2023/02/20 21:49:51 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 21:49:51 [notice] 20#20: gracefully shutting down
+2023/02/20 21:49:51 [notice] 21#21: gracefully shutting down
+2023/02/20 21:49:51 [notice] 20#20: exiting
+2023/02/20 21:49:51 [notice] 22#22: gracefully shutting down
+2023/02/20 21:49:51 [notice] 21#21: exiting
+2023/02/20 21:49:51 [notice] 23#23: gracefully shutting down
+2023/02/20 21:49:51 [notice] 22#22: exiting
+2023/02/20 21:49:51 [notice] 24#24: gracefully shutting down
+2023/02/20 21:49:51 [notice] 22#22: exit
+2023/02/20 21:49:51 [notice] 23#23: exiting
+2023/02/20 21:49:51 [notice] 21#21: exit
+2023/02/20 21:49:51 [notice] 20#20: exit
+2023/02/20 21:49:51 [notice] 25#25: gracefully shutting down
+2023/02/20 21:49:51 [notice] 24#24: exiting
+2023/02/20 21:49:51 [notice] 23#23: exit
+2023/02/20 21:49:51 [notice] 25#25: exiting
+2023/02/20 21:49:51 [notice] 26#26: gracefully shutting down
+2023/02/20 21:49:51 [notice] 24#24: exit
+2023/02/20 21:49:51 [notice] 27#27: gracefully shutting down
+2023/02/20 21:49:51 [notice] 25#25: exit
+2023/02/20 21:49:51 [notice] 26#26: exiting
+2023/02/20 21:49:51 [notice] 28#28: gracefully shutting down
+2023/02/20 21:49:51 [notice] 29#29: gracefully shutting down
+2023/02/20 21:49:51 [notice] 27#27: exiting
+2023/02/20 21:49:51 [notice] 26#26: exit
+2023/02/20 21:49:51 [notice] 28#28: exiting
+2023/02/20 21:49:51 [notice] 31#31: gracefully shutting down
+2023/02/20 21:49:51 [notice] 30#30: gracefully shutting down
+2023/02/20 21:49:51 [notice] 32#32: gracefully shutting down
+2023/02/20 21:49:51 [notice] 29#29: exiting
+2023/02/20 21:49:51 [notice] 33#33: gracefully shutting down
+2023/02/20 21:49:51 [notice] 27#27: exit
+2023/02/20 21:49:51 [notice] 28#28: exit
+2023/02/20 21:49:51 [notice] 31#31: exiting
+2023/02/20 21:49:51 [notice] 35#35: gracefully shutting down
+2023/02/20 21:49:51 [notice] 30#30: exiting
+2023/02/20 21:49:51 [notice] 32#32: exiting
+2023/02/20 21:49:51 [notice] 29#29: exit
+2023/02/20 21:49:51 [notice] 33#33: exiting
+2023/02/20 21:49:51 [notice] 31#31: exit
+2023/02/20 21:49:51 [notice] 35#35: exiting
+2023/02/20 21:49:51 [notice] 32#32: exit
+2023/02/20 21:49:51 [notice] 30#30: exit
+2023/02/20 21:49:51 [notice] 33#33: exit
+2023/02/20 21:49:51 [notice] 35#35: exit
+2023/02/20 21:49:51 [notice] 34#34: gracefully shutting down
+2023/02/20 21:49:51 [notice] 34#34: exiting
+2023/02/20 21:49:51 [notice] 34#34: exit
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/20 21:49:51 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/20 21:49:51 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 21:49:51 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/20 21:49:51 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:49:51 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 21:49:51 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 21:49:51 [notice] 1#1: exit
+2023/02/20 21:52:07 [notice] 1#1: using the "epoll" event method
+2023/02/20 21:52:07 [notice] 1#1: nginx/1.23.3
+2023/02/20 21:52:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 21:52:07 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 21:52:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 21:52:07 [notice] 1#1: start worker processes
+2023/02/20 21:52:07 [notice] 1#1: start worker process 21
+2023/02/20 21:52:07 [notice] 1#1: start worker process 22
+2023/02/20 21:52:07 [notice] 1#1: start worker process 23
+2023/02/20 21:52:07 [notice] 1#1: start worker process 24
+2023/02/20 21:52:07 [notice] 1#1: start worker process 25
+2023/02/20 21:52:07 [notice] 1#1: start worker process 26
+2023/02/20 21:52:07 [notice] 1#1: start worker process 27
+2023/02/20 21:52:07 [notice] 1#1: start worker process 28
+2023/02/20 21:52:07 [notice] 1#1: start worker process 29
+2023/02/20 21:52:07 [notice] 1#1: start worker process 30
+2023/02/20 21:52:07 [notice] 1#1: start worker process 31
+2023/02/20 21:52:07 [notice] 1#1: start worker process 32
+2023/02/20 21:52:07 [notice] 1#1: start worker process 33
+2023/02/20 21:52:07 [notice] 1#1: start worker process 34
+2023/02/20 21:52:07 [notice] 1#1: start worker process 35
+2023/02/20 21:52:07 [notice] 1#1: start worker process 36
+2023/02/20 21:52:18 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 21:52:18 [notice] 21#21: gracefully shutting down
+2023/02/20 21:52:18 [notice] 22#22: gracefully shutting down
+2023/02/20 21:52:18 [notice] 23#23: gracefully shutting down
+2023/02/20 21:52:18 [notice] 21#21: exiting
+2023/02/20 21:52:18 [notice] 22#22: exiting
+2023/02/20 21:52:18 [notice] 24#24: gracefully shutting down
+2023/02/20 21:52:18 [notice] 23#23: exiting
+2023/02/20 21:52:18 [notice] 25#25: gracefully shutting down
+2023/02/20 21:52:18 [notice] 24#24: exiting
+2023/02/20 21:52:18 [notice] 22#22: exit
+2023/02/20 21:52:18 [notice] 21#21: exit
+2023/02/20 21:52:18 [notice] 26#26: gracefully shutting down
+2023/02/20 21:52:18 [notice] 23#23: exit
+2023/02/20 21:52:18 [notice] 25#25: exiting
+2023/02/20 21:52:18 [notice] 24#24: exit
+2023/02/20 21:52:18 [notice] 27#27: gracefully shutting down
+2023/02/20 21:52:18 [notice] 26#26: exiting
+2023/02/20 21:52:18 [notice] 25#25: exit
+2023/02/20 21:52:18 [notice] 28#28: gracefully shutting down
+2023/02/20 21:52:18 [notice] 27#27: exiting
+2023/02/20 21:52:18 [notice] 26#26: exit
+2023/02/20 21:52:18 [notice] 29#29: gracefully shutting down
+2023/02/20 21:52:18 [notice] 28#28: exiting
+2023/02/20 21:52:18 [notice] 27#27: exit
+2023/02/20 21:52:18 [notice] 30#30: gracefully shutting down
+2023/02/20 21:52:18 [notice] 29#29: exiting
+2023/02/20 21:52:18 [notice] 28#28: exit
+2023/02/20 21:52:18 [notice] 31#31: gracefully shutting down
+2023/02/20 21:52:18 [notice] 30#30: exiting
+2023/02/20 21:52:18 [notice] 29#29: exit
+2023/02/20 21:52:18 [notice] 33#33: gracefully shutting down
+2023/02/20 21:52:18 [notice] 31#31: exiting
+2023/02/20 21:52:18 [notice] 35#35: gracefully shutting down
+2023/02/20 21:52:18 [notice] 30#30: exit
+2023/02/20 21:52:18 [notice] 33#33: exiting
+2023/02/20 21:52:18 [notice] 35#35: exiting
+2023/02/20 21:52:18 [notice] 31#31: exit
+2023/02/20 21:52:18 [notice] 33#33: exit
+2023/02/20 21:52:18 [notice] 35#35: exit
+2023/02/20 21:52:18 [notice] 34#34: gracefully shutting down
+2023/02/20 21:52:18 [notice] 34#34: exiting
+2023/02/20 21:52:18 [notice] 36#36: gracefully shutting down
+2023/02/20 21:52:18 [notice] 34#34: exit
+2023/02/20 21:52:18 [notice] 36#36: exiting
+2023/02/20 21:52:18 [notice] 36#36: exit
+2023/02/20 21:52:18 [notice] 32#32: gracefully shutting down
+2023/02/20 21:52:18 [notice] 32#32: exiting
+2023/02/20 21:52:18 [notice] 32#32: exit
+2023/02/20 21:52:19 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/20 21:52:19 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 36 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:52:19 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 21:52:19 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/20 21:52:19 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 21:52:19 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/20 21:52:19 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 21:52:19 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 21:52:19 [notice] 1#1: exit
+2023/02/20 21:56:18 [notice] 1#1: using the "epoll" event method
+2023/02/20 21:56:18 [notice] 1#1: nginx/1.23.3
+2023/02/20 21:56:18 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 21:56:18 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 21:56:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 21:56:18 [notice] 1#1: start worker processes
+2023/02/20 21:56:18 [notice] 1#1: start worker process 20
+2023/02/20 21:56:18 [notice] 1#1: start worker process 21
+2023/02/20 21:56:18 [notice] 1#1: start worker process 22
+2023/02/20 21:56:18 [notice] 1#1: start worker process 23
+2023/02/20 21:56:18 [notice] 1#1: start worker process 24
+2023/02/20 21:56:18 [notice] 1#1: start worker process 25
+2023/02/20 21:56:18 [notice] 1#1: start worker process 26
+2023/02/20 21:56:18 [notice] 1#1: start worker process 27
+2023/02/20 21:56:18 [notice] 1#1: start worker process 28
+2023/02/20 21:56:18 [notice] 1#1: start worker process 29
+2023/02/20 21:56:18 [notice] 1#1: start worker process 30
+2023/02/20 21:56:18 [notice] 1#1: start worker process 31
+2023/02/20 21:56:18 [notice] 1#1: start worker process 32
+2023/02/20 21:56:18 [notice] 1#1: start worker process 33
+2023/02/20 21:56:18 [notice] 1#1: start worker process 34
+2023/02/20 21:56:18 [notice] 1#1: start worker process 35
+2023/02/20 22:00:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:00:00 [notice] 20#20: gracefully shutting down
+2023/02/20 22:00:00 [notice] 21#21: gracefully shutting down
+2023/02/20 22:00:00 [notice] 22#22: gracefully shutting down
+2023/02/20 22:00:00 [notice] 23#23: gracefully shutting down
+2023/02/20 22:00:00 [notice] 21#21: exiting
+2023/02/20 22:00:00 [notice] 20#20: exiting
+2023/02/20 22:00:00 [notice] 24#24: gracefully shutting down
+2023/02/20 22:00:00 [notice] 22#22: exiting
+2023/02/20 22:00:00 [notice] 25#25: gracefully shutting down
+2023/02/20 22:00:00 [notice] 26#26: gracefully shutting down
+2023/02/20 22:00:00 [notice] 23#23: exiting
+2023/02/20 22:00:00 [notice] 24#24: exiting
+2023/02/20 22:00:00 [notice] 27#27: gracefully shutting down
+2023/02/20 22:00:00 [notice] 21#21: exit
+2023/02/20 22:00:00 [notice] 20#20: exit
+2023/02/20 22:00:00 [notice] 25#25: exiting
+2023/02/20 22:00:00 [notice] 28#28: gracefully shutting down
+2023/02/20 22:00:00 [notice] 22#22: exit
+2023/02/20 22:00:00 [notice] 26#26: exiting
+2023/02/20 22:00:00 [notice] 29#29: gracefully shutting down
+2023/02/20 22:00:00 [notice] 23#23: exit
+2023/02/20 22:00:00 [notice] 24#24: exit
+2023/02/20 22:00:00 [notice] 27#27: exiting
+2023/02/20 22:00:00 [notice] 25#25: exit
+2023/02/20 22:00:00 [notice] 30#30: gracefully shutting down
+2023/02/20 22:00:00 [notice] 28#28: exiting
+2023/02/20 22:00:00 [notice] 26#26: exit
+2023/02/20 22:00:00 [notice] 29#29: exiting
+2023/02/20 22:00:00 [notice] 31#31: gracefully shutting down
+2023/02/20 22:00:00 [notice] 27#27: exit
+2023/02/20 22:00:00 [notice] 35#35: gracefully shutting down
+2023/02/20 22:00:00 [notice] 28#28: exit
+2023/02/20 22:00:00 [notice] 30#30: exiting
+2023/02/20 22:00:00 [notice] 32#32: gracefully shutting down
+2023/02/20 22:00:00 [notice] 29#29: exit
+2023/02/20 22:00:00 [notice] 31#31: exiting
+2023/02/20 22:00:00 [notice] 35#35: exiting
+2023/02/20 22:00:00 [notice] 30#30: exit
+2023/02/20 22:00:00 [notice] 32#32: exiting
+2023/02/20 22:00:00 [notice] 31#31: exit
+2023/02/20 22:00:00 [notice] 35#35: exit
+2023/02/20 22:00:00 [notice] 32#32: exit
+2023/02/20 22:00:00 [notice] 33#33: gracefully shutting down
+2023/02/20 22:00:00 [notice] 34#34: gracefully shutting down
+2023/02/20 22:00:00 [notice] 33#33: exiting
+2023/02/20 22:00:00 [notice] 34#34: exiting
+2023/02/20 22:00:00 [notice] 33#33: exit
+2023/02/20 22:00:00 [notice] 34#34: exit
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/20 22:00:00 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/20 22:00:00 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/02/20 22:00:00 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/20 22:00:00 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:00:00 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:00:00 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:00:00 [notice] 1#1: exit
+2023/02/20 22:00:14 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:00:14 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:00:14 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:00:14 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:00:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:00:14 [notice] 1#1: start worker processes
+2023/02/20 22:00:14 [notice] 1#1: start worker process 20
+2023/02/20 22:00:14 [notice] 1#1: start worker process 21
+2023/02/20 22:00:14 [notice] 1#1: start worker process 22
+2023/02/20 22:00:14 [notice] 1#1: start worker process 23
+2023/02/20 22:00:14 [notice] 1#1: start worker process 24
+2023/02/20 22:00:14 [notice] 1#1: start worker process 25
+2023/02/20 22:00:14 [notice] 1#1: start worker process 26
+2023/02/20 22:00:14 [notice] 1#1: start worker process 27
+2023/02/20 22:00:14 [notice] 1#1: start worker process 28
+2023/02/20 22:00:14 [notice] 1#1: start worker process 29
+2023/02/20 22:00:14 [notice] 1#1: start worker process 30
+2023/02/20 22:00:14 [notice] 1#1: start worker process 31
+2023/02/20 22:00:14 [notice] 1#1: start worker process 32
+2023/02/20 22:00:14 [notice] 1#1: start worker process 33
+2023/02/20 22:00:14 [notice] 1#1: start worker process 34
+2023/02/20 22:00:14 [notice] 1#1: start worker process 35
+2023/02/20 22:01:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:01:10 [notice] 20#20: gracefully shutting down
+2023/02/20 22:01:10 [notice] 20#20: exiting
+2023/02/20 22:01:10 [notice] 21#21: gracefully shutting down
+2023/02/20 22:01:10 [notice] 22#22: gracefully shutting down
+2023/02/20 22:01:10 [notice] 21#21: exiting
+2023/02/20 22:01:10 [notice] 23#23: gracefully shutting down
+2023/02/20 22:01:10 [notice] 20#20: exit
+2023/02/20 22:01:10 [notice] 22#22: exiting
+2023/02/20 22:01:10 [notice] 24#24: gracefully shutting down
+2023/02/20 22:01:10 [notice] 23#23: exiting
+2023/02/20 22:01:10 [notice] 21#21: exit
+2023/02/20 22:01:10 [notice] 25#25: gracefully shutting down
+2023/02/20 22:01:10 [notice] 24#24: exiting
+2023/02/20 22:01:10 [notice] 22#22: exit
+2023/02/20 22:01:10 [notice] 23#23: exit
+2023/02/20 22:01:10 [notice] 25#25: exiting
+2023/02/20 22:01:10 [notice] 26#26: gracefully shutting down
+2023/02/20 22:01:10 [notice] 24#24: exit
+2023/02/20 22:01:10 [notice] 25#25: exit
+2023/02/20 22:01:10 [notice] 27#27: gracefully shutting down
+2023/02/20 22:01:10 [notice] 26#26: exiting
+2023/02/20 22:01:10 [notice] 28#28: gracefully shutting down
+2023/02/20 22:01:10 [notice] 27#27: exiting
+2023/02/20 22:01:10 [notice] 29#29: gracefully shutting down
+2023/02/20 22:01:10 [notice] 26#26: exit
+2023/02/20 22:01:10 [notice] 30#30: gracefully shutting down
+2023/02/20 22:01:10 [notice] 28#28: exiting
+2023/02/20 22:01:10 [notice] 29#29: exiting
+2023/02/20 22:01:10 [notice] 27#27: exit
+2023/02/20 22:01:10 [notice] 30#30: exiting
+2023/02/20 22:01:10 [notice] 31#31: gracefully shutting down
+2023/02/20 22:01:10 [notice] 32#32: gracefully shutting down
+2023/02/20 22:01:10 [notice] 28#28: exit
+2023/02/20 22:01:10 [notice] 31#31: exiting
+2023/02/20 22:01:10 [notice] 32#32: exiting
+2023/02/20 22:01:10 [notice] 30#30: exit
+2023/02/20 22:01:10 [notice] 29#29: exit
+2023/02/20 22:01:10 [notice] 32#32: exit
+2023/02/20 22:01:10 [notice] 35#35: gracefully shutting down
+2023/02/20 22:01:10 [notice] 31#31: exit
+2023/02/20 22:01:10 [notice] 35#35: exiting
+2023/02/20 22:01:10 [notice] 35#35: exit
+2023/02/20 22:01:10 [notice] 34#34: gracefully shutting down
+2023/02/20 22:01:10 [notice] 33#33: gracefully shutting down
+2023/02/20 22:01:10 [notice] 34#34: exiting
+2023/02/20 22:01:10 [notice] 33#33: exiting
+2023/02/20 22:01:10 [notice] 34#34: exit
+2023/02/20 22:01:10 [notice] 33#33: exit
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:01:10 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/20 22:01:10 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/20 22:01:10 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/20 22:01:10 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/20 22:01:10 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 22:01:10 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:01:10 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/20 22:01:10 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:01:10 [notice] 1#1: exit
+2023/02/20 22:01:12 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:01:12 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:01:12 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:01:12 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:01:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:01:12 [notice] 1#1: start worker processes
+2023/02/20 22:01:12 [notice] 1#1: start worker process 20
+2023/02/20 22:01:12 [notice] 1#1: start worker process 21
+2023/02/20 22:01:12 [notice] 1#1: start worker process 22
+2023/02/20 22:01:12 [notice] 1#1: start worker process 23
+2023/02/20 22:01:12 [notice] 1#1: start worker process 24
+2023/02/20 22:01:12 [notice] 1#1: start worker process 25
+2023/02/20 22:01:12 [notice] 1#1: start worker process 26
+2023/02/20 22:01:12 [notice] 1#1: start worker process 27
+2023/02/20 22:01:12 [notice] 1#1: start worker process 28
+2023/02/20 22:01:12 [notice] 1#1: start worker process 29
+2023/02/20 22:01:12 [notice] 1#1: start worker process 30
+2023/02/20 22:01:12 [notice] 1#1: start worker process 31
+2023/02/20 22:01:12 [notice] 1#1: start worker process 32
+2023/02/20 22:01:12 [notice] 1#1: start worker process 33
+2023/02/20 22:01:12 [notice] 1#1: start worker process 34
+2023/02/20 22:01:12 [notice] 1#1: start worker process 35
+2023/02/20 22:02:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:02:22 [notice] 20#20: gracefully shutting down
+2023/02/20 22:02:22 [notice] 21#21: gracefully shutting down
+2023/02/20 22:02:22 [notice] 22#22: gracefully shutting down
+2023/02/20 22:02:22 [notice] 23#23: gracefully shutting down
+2023/02/20 22:02:22 [notice] 20#20: exiting
+2023/02/20 22:02:22 [notice] 21#21: exiting
+2023/02/20 22:02:22 [notice] 24#24: gracefully shutting down
+2023/02/20 22:02:22 [notice] 22#22: exiting
+2023/02/20 22:02:22 [notice] 25#25: gracefully shutting down
+2023/02/20 22:02:22 [notice] 23#23: exiting
+2023/02/20 22:02:22 [notice] 24#24: exiting
+2023/02/20 22:02:22 [notice] 26#26: gracefully shutting down
+2023/02/20 22:02:22 [notice] 20#20: exit
+2023/02/20 22:02:22 [notice] 25#25: exiting
+2023/02/20 22:02:22 [notice] 21#21: exit
+2023/02/20 22:02:22 [notice] 22#22: exit
+2023/02/20 22:02:22 [notice] 24#24: exit
+2023/02/20 22:02:22 [notice] 23#23: exit
+2023/02/20 22:02:22 [notice] 27#27: gracefully shutting down
+2023/02/20 22:02:22 [notice] 26#26: exiting
+2023/02/20 22:02:22 [notice] 28#28: gracefully shutting down
+2023/02/20 22:02:22 [notice] 25#25: exit
+2023/02/20 22:02:22 [notice] 29#29: gracefully shutting down
+2023/02/20 22:02:22 [notice] 27#27: exiting
+2023/02/20 22:02:22 [notice] 28#28: exiting
+2023/02/20 22:02:22 [notice] 26#26: exit
+2023/02/20 22:02:22 [notice] 30#30: gracefully shutting down
+2023/02/20 22:02:22 [notice] 29#29: exiting
+2023/02/20 22:02:22 [notice] 31#31: gracefully shutting down
+2023/02/20 22:02:22 [notice] 27#27: exit
+2023/02/20 22:02:22 [notice] 32#32: gracefully shutting down
+2023/02/20 22:02:22 [notice] 28#28: exit
+2023/02/20 22:02:22 [notice] 30#30: exiting
+2023/02/20 22:02:22 [notice] 34#34: gracefully shutting down
+2023/02/20 22:02:22 [notice] 29#29: exit
+2023/02/20 22:02:22 [notice] 32#32: exiting
+2023/02/20 22:02:22 [notice] 31#31: exiting
+2023/02/20 22:02:22 [notice] 34#34: exiting
+2023/02/20 22:02:22 [notice] 30#30: exit
+2023/02/20 22:02:22 [notice] 32#32: exit
+2023/02/20 22:02:22 [notice] 34#34: exit
+2023/02/20 22:02:22 [notice] 31#31: exit
+2023/02/20 22:02:22 [notice] 33#33: gracefully shutting down
+2023/02/20 22:02:22 [notice] 35#35: gracefully shutting down
+2023/02/20 22:02:22 [notice] 33#33: exiting
+2023/02/20 22:02:22 [notice] 35#35: exiting
+2023/02/20 22:02:22 [notice] 33#33: exit
+2023/02/20 22:02:22 [notice] 35#35: exit
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 22:02:23 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/20 22:02:23 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/20 22:02:23 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/20 22:02:23 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 22:02:23 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:02:23 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:02:23 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/20 22:02:23 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:02:23 [notice] 1#1: exit
+2023/02/20 22:06:05 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:06:05 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:06:05 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:06:05 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:06:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:06:05 [notice] 1#1: start worker processes
+2023/02/20 22:06:05 [notice] 1#1: start worker process 20
+2023/02/20 22:06:05 [notice] 1#1: start worker process 21
+2023/02/20 22:06:05 [notice] 1#1: start worker process 22
+2023/02/20 22:06:05 [notice] 1#1: start worker process 23
+2023/02/20 22:06:05 [notice] 1#1: start worker process 24
+2023/02/20 22:06:05 [notice] 1#1: start worker process 25
+2023/02/20 22:06:05 [notice] 1#1: start worker process 26
+2023/02/20 22:06:05 [notice] 1#1: start worker process 27
+2023/02/20 22:06:05 [notice] 1#1: start worker process 28
+2023/02/20 22:06:05 [notice] 1#1: start worker process 29
+2023/02/20 22:06:05 [notice] 1#1: start worker process 30
+2023/02/20 22:06:05 [notice] 1#1: start worker process 31
+2023/02/20 22:06:05 [notice] 1#1: start worker process 32
+2023/02/20 22:06:05 [notice] 1#1: start worker process 33
+2023/02/20 22:06:05 [notice] 1#1: start worker process 34
+2023/02/20 22:06:05 [notice] 1#1: start worker process 35
+2023/02/20 22:06:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:06:56 [notice] 20#20: gracefully shutting down
+2023/02/20 22:06:56 [notice] 21#21: gracefully shutting down
+2023/02/20 22:06:56 [notice] 20#20: exiting
+2023/02/20 22:06:56 [notice] 22#22: gracefully shutting down
+2023/02/20 22:06:56 [notice] 21#21: exiting
+2023/02/20 22:06:56 [notice] 23#23: gracefully shutting down
+2023/02/20 22:06:56 [notice] 20#20: exit
+2023/02/20 22:06:56 [notice] 22#22: exiting
+2023/02/20 22:06:56 [notice] 24#24: gracefully shutting down
+2023/02/20 22:06:56 [notice] 21#21: exit
+2023/02/20 22:06:56 [notice] 23#23: exiting
+2023/02/20 22:06:56 [notice] 25#25: gracefully shutting down
+2023/02/20 22:06:56 [notice] 22#22: exit
+2023/02/20 22:06:56 [notice] 24#24: exiting
+2023/02/20 22:06:56 [notice] 26#26: gracefully shutting down
+2023/02/20 22:06:56 [notice] 25#25: exiting
+2023/02/20 22:06:56 [notice] 23#23: exit
+2023/02/20 22:06:56 [notice] 27#27: gracefully shutting down
+2023/02/20 22:06:56 [notice] 24#24: exit
+2023/02/20 22:06:56 [notice] 26#26: exiting
+2023/02/20 22:06:56 [notice] 28#28: gracefully shutting down
+2023/02/20 22:06:56 [notice] 25#25: exit
+2023/02/20 22:06:56 [notice] 27#27: exiting
+2023/02/20 22:06:56 [notice] 29#29: gracefully shutting down
+2023/02/20 22:06:56 [notice] 26#26: exit
+2023/02/20 22:06:56 [notice] 28#28: exiting
+2023/02/20 22:06:56 [notice] 30#30: gracefully shutting down
+2023/02/20 22:06:56 [notice] 29#29: exiting
+2023/02/20 22:06:56 [notice] 27#27: exit
+2023/02/20 22:06:56 [notice] 31#31: gracefully shutting down
+2023/02/20 22:06:56 [notice] 32#32: gracefully shutting down
+2023/02/20 22:06:56 [notice] 30#30: exiting
+2023/02/20 22:06:56 [notice] 28#28: exit
+2023/02/20 22:06:56 [notice] 31#31: exiting
+2023/02/20 22:06:56 [notice] 29#29: exit
+2023/02/20 22:06:56 [notice] 32#32: exiting
+2023/02/20 22:06:56 [notice] 30#30: exit
+2023/02/20 22:06:56 [notice] 31#31: exit
+2023/02/20 22:06:56 [notice] 32#32: exit
+2023/02/20 22:06:56 [notice] 34#34: gracefully shutting down
+2023/02/20 22:06:56 [notice] 35#35: gracefully shutting down
+2023/02/20 22:06:56 [notice] 34#34: exiting
+2023/02/20 22:06:56 [notice] 35#35: exiting
+2023/02/20 22:06:56 [notice] 34#34: exit
+2023/02/20 22:06:56 [notice] 33#33: gracefully shutting down
+2023/02/20 22:06:56 [notice] 35#35: exit
+2023/02/20 22:06:56 [notice] 33#33: exiting
+2023/02/20 22:06:56 [notice] 33#33: exit
+2023/02/20 22:06:56 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/02/20 22:06:56 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:06:56 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:06:56 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:06:56 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/20 22:06:56 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:06:56 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/20 22:06:56 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:06:56 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:07:54 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:07:54 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:07:54 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:07:54 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:07:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:07:54 [notice] 1#1: start worker processes
+2023/02/20 22:07:54 [notice] 1#1: start worker process 20
+2023/02/20 22:07:54 [notice] 1#1: start worker process 21
+2023/02/20 22:07:54 [notice] 1#1: start worker process 22
+2023/02/20 22:07:54 [notice] 1#1: start worker process 23
+2023/02/20 22:07:54 [notice] 1#1: start worker process 24
+2023/02/20 22:07:54 [notice] 1#1: start worker process 25
+2023/02/20 22:07:54 [notice] 1#1: start worker process 26
+2023/02/20 22:07:54 [notice] 1#1: start worker process 27
+2023/02/20 22:07:54 [notice] 1#1: start worker process 28
+2023/02/20 22:07:54 [notice] 1#1: start worker process 29
+2023/02/20 22:07:54 [notice] 1#1: start worker process 30
+2023/02/20 22:07:54 [notice] 1#1: start worker process 31
+2023/02/20 22:07:54 [notice] 1#1: start worker process 32
+2023/02/20 22:07:54 [notice] 1#1: start worker process 33
+2023/02/20 22:07:54 [notice] 1#1: start worker process 34
+2023/02/20 22:07:54 [notice] 1#1: start worker process 35
+2023/02/20 22:09:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:09:40 [notice] 20#20: gracefully shutting down
+2023/02/20 22:09:40 [notice] 21#21: gracefully shutting down
+2023/02/20 22:09:40 [notice] 22#22: gracefully shutting down
+2023/02/20 22:09:40 [notice] 20#20: exiting
+2023/02/20 22:09:40 [notice] 21#21: exiting
+2023/02/20 22:09:40 [notice] 23#23: gracefully shutting down
+2023/02/20 22:09:40 [notice] 24#24: gracefully shutting down
+2023/02/20 22:09:40 [notice] 22#22: exiting
+2023/02/20 22:09:40 [notice] 20#20: exit
+2023/02/20 22:09:40 [notice] 25#25: gracefully shutting down
+2023/02/20 22:09:40 [notice] 24#24: exiting
+2023/02/20 22:09:40 [notice] 21#21: exit
+2023/02/20 22:09:40 [notice] 23#23: exiting
+2023/02/20 22:09:40 [notice] 26#26: gracefully shutting down
+2023/02/20 22:09:40 [notice] 22#22: exit
+2023/02/20 22:09:40 [notice] 25#25: exiting
+2023/02/20 22:09:40 [notice] 27#27: gracefully shutting down
+2023/02/20 22:09:40 [notice] 28#28: gracefully shutting down
+2023/02/20 22:09:40 [notice] 26#26: exiting
+2023/02/20 22:09:40 [notice] 29#29: gracefully shutting down
+2023/02/20 22:09:40 [notice] 23#23: exit
+2023/02/20 22:09:40 [notice] 24#24: exit
+2023/02/20 22:09:40 [notice] 30#30: gracefully shutting down
+2023/02/20 22:09:40 [notice] 27#27: exiting
+2023/02/20 22:09:40 [notice] 25#25: exit
+2023/02/20 22:09:40 [notice] 28#28: exiting
+2023/02/20 22:09:40 [notice] 29#29: exiting
+2023/02/20 22:09:40 [notice] 26#26: exit
+2023/02/20 22:09:40 [notice] 30#30: exiting
+2023/02/20 22:09:40 [notice] 32#32: gracefully shutting down
+2023/02/20 22:09:40 [notice] 27#27: exit
+2023/02/20 22:09:40 [notice] 33#33: gracefully shutting down
+2023/02/20 22:09:40 [notice] 28#28: exit
+2023/02/20 22:09:40 [notice] 29#29: exit
+2023/02/20 22:09:40 [notice] 32#32: exiting
+2023/02/20 22:09:40 [notice] 31#31: gracefully shutting down
+2023/02/20 22:09:40 [notice] 30#30: exit
+2023/02/20 22:09:40 [notice] 33#33: exiting
+2023/02/20 22:09:40 [notice] 31#31: exiting
+2023/02/20 22:09:40 [notice] 32#32: exit
+2023/02/20 22:09:40 [notice] 33#33: exit
+2023/02/20 22:09:40 [notice] 31#31: exit
+2023/02/20 22:09:40 [notice] 34#34: gracefully shutting down
+2023/02/20 22:09:40 [notice] 34#34: exiting
+2023/02/20 22:09:40 [notice] 34#34: exit
+2023/02/20 22:09:40 [notice] 35#35: gracefully shutting down
+2023/02/20 22:09:40 [notice] 35#35: exiting
+2023/02/20 22:09:40 [notice] 35#35: exit
+2023/02/20 22:09:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/20 22:09:40 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:09:40 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:09:40 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:09:40 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/20 22:09:40 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:09:40 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 22:09:40 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:09:40 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/20 22:09:40 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:09:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:16:07 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:16:07 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:16:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:16:07 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:16:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:16:07 [notice] 1#1: start worker processes
+2023/02/20 22:16:07 [notice] 1#1: start worker process 20
+2023/02/20 22:16:07 [notice] 1#1: start worker process 21
+2023/02/20 22:16:07 [notice] 1#1: start worker process 22
+2023/02/20 22:16:07 [notice] 1#1: start worker process 23
+2023/02/20 22:16:07 [notice] 1#1: start worker process 24
+2023/02/20 22:16:07 [notice] 1#1: start worker process 25
+2023/02/20 22:16:07 [notice] 1#1: start worker process 26
+2023/02/20 22:16:07 [notice] 1#1: start worker process 27
+2023/02/20 22:16:07 [notice] 1#1: start worker process 28
+2023/02/20 22:16:07 [notice] 1#1: start worker process 29
+2023/02/20 22:16:07 [notice] 1#1: start worker process 30
+2023/02/20 22:16:07 [notice] 1#1: start worker process 31
+2023/02/20 22:16:07 [notice] 1#1: start worker process 32
+2023/02/20 22:16:07 [notice] 1#1: start worker process 33
+2023/02/20 22:16:07 [notice] 1#1: start worker process 34
+2023/02/20 22:16:07 [notice] 1#1: start worker process 35
+2023/02/20 22:17:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:17:58 [notice] 20#20: gracefully shutting down
+2023/02/20 22:17:58 [notice] 21#21: gracefully shutting down
+2023/02/20 22:17:58 [notice] 22#22: gracefully shutting down
+2023/02/20 22:17:58 [notice] 20#20: exiting
+2023/02/20 22:17:58 [notice] 21#21: exiting
+2023/02/20 22:17:58 [notice] 23#23: gracefully shutting down
+2023/02/20 22:17:58 [notice] 22#22: exiting
+2023/02/20 22:17:58 [notice] 24#24: gracefully shutting down
+2023/02/20 22:17:58 [notice] 23#23: exiting
+2023/02/20 22:17:58 [notice] 25#25: gracefully shutting down
+2023/02/20 22:17:58 [notice] 21#21: exit
+2023/02/20 22:17:58 [notice] 20#20: exit
+2023/02/20 22:17:58 [notice] 22#22: exit
+2023/02/20 22:17:58 [notice] 24#24: exiting
+2023/02/20 22:17:58 [notice] 26#26: gracefully shutting down
+2023/02/20 22:17:58 [notice] 23#23: exit
+2023/02/20 22:17:58 [notice] 25#25: exiting
+2023/02/20 22:17:58 [notice] 27#27: gracefully shutting down
+2023/02/20 22:17:58 [notice] 26#26: exiting
+2023/02/20 22:17:58 [notice] 24#24: exit
+2023/02/20 22:17:58 [notice] 28#28: gracefully shutting down
+2023/02/20 22:17:58 [notice] 27#27: exiting
+2023/02/20 22:17:58 [notice] 25#25: exit
+2023/02/20 22:17:58 [notice] 29#29: gracefully shutting down
+2023/02/20 22:17:58 [notice] 26#26: exit
+2023/02/20 22:17:58 [notice] 28#28: exiting
+2023/02/20 22:17:58 [notice] 30#30: gracefully shutting down
+2023/02/20 22:17:58 [notice] 27#27: exit
+2023/02/20 22:17:58 [notice] 29#29: exiting
+2023/02/20 22:17:58 [notice] 34#34: gracefully shutting down
+2023/02/20 22:17:58 [notice] 31#31: gracefully shutting down
+2023/02/20 22:17:58 [notice] 32#32: gracefully shutting down
+2023/02/20 22:17:58 [notice] 28#28: exit
+2023/02/20 22:17:58 [notice] 30#30: exiting
+2023/02/20 22:17:58 [notice] 34#34: exiting
+2023/02/20 22:17:58 [notice] 29#29: exit
+2023/02/20 22:17:58 [notice] 31#31: exiting
+2023/02/20 22:17:58 [notice] 32#32: exiting
+2023/02/20 22:17:58 [notice] 30#30: exit
+2023/02/20 22:17:58 [notice] 34#34: exit
+2023/02/20 22:17:58 [notice] 31#31: exit
+2023/02/20 22:17:58 [notice] 32#32: exit
+2023/02/20 22:17:58 [notice] 35#35: gracefully shutting down
+2023/02/20 22:17:58 [notice] 33#33: gracefully shutting down
+2023/02/20 22:17:58 [notice] 35#35: exiting
+2023/02/20 22:17:58 [notice] 33#33: exiting
+2023/02/20 22:17:58 [notice] 35#35: exit
+2023/02/20 22:17:58 [notice] 33#33: exit
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/02/20 22:17:58 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 22:17:58 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 22:17:58 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/20 22:17:58 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:17:58 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:17:58 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:17:58 [notice] 1#1: exit
+2023/02/20 22:18:01 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:18:01 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:18:01 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:18:01 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:18:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:18:01 [notice] 1#1: start worker processes
+2023/02/20 22:18:01 [notice] 1#1: start worker process 20
+2023/02/20 22:18:01 [notice] 1#1: start worker process 21
+2023/02/20 22:18:01 [notice] 1#1: start worker process 22
+2023/02/20 22:18:01 [notice] 1#1: start worker process 23
+2023/02/20 22:18:01 [notice] 1#1: start worker process 24
+2023/02/20 22:18:01 [notice] 1#1: start worker process 25
+2023/02/20 22:18:01 [notice] 1#1: start worker process 26
+2023/02/20 22:18:01 [notice] 1#1: start worker process 27
+2023/02/20 22:18:01 [notice] 1#1: start worker process 28
+2023/02/20 22:18:01 [notice] 1#1: start worker process 29
+2023/02/20 22:18:01 [notice] 1#1: start worker process 30
+2023/02/20 22:18:01 [notice] 1#1: start worker process 31
+2023/02/20 22:18:01 [notice] 1#1: start worker process 32
+2023/02/20 22:18:01 [notice] 1#1: start worker process 33
+2023/02/20 22:18:01 [notice] 1#1: start worker process 34
+2023/02/20 22:18:01 [notice] 1#1: start worker process 35
+2023/02/20 22:19:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:19:27 [notice] 20#20: gracefully shutting down
+2023/02/20 22:19:27 [notice] 21#21: gracefully shutting down
+2023/02/20 22:19:27 [notice] 22#22: gracefully shutting down
+2023/02/20 22:19:27 [notice] 20#20: exiting
+2023/02/20 22:19:27 [notice] 23#23: gracefully shutting down
+2023/02/20 22:19:27 [notice] 21#21: exiting
+2023/02/20 22:19:27 [notice] 24#24: gracefully shutting down
+2023/02/20 22:19:27 [notice] 22#22: exiting
+2023/02/20 22:19:27 [notice] 23#23: exiting
+2023/02/20 22:19:27 [notice] 25#25: gracefully shutting down
+2023/02/20 22:19:27 [notice] 24#24: exiting
+2023/02/20 22:19:27 [notice] 26#26: gracefully shutting down
+2023/02/20 22:19:27 [notice] 20#20: exit
+2023/02/20 22:19:27 [notice] 21#21: exit
+2023/02/20 22:19:27 [notice] 22#22: exit
+2023/02/20 22:19:27 [notice] 25#25: exiting
+2023/02/20 22:19:27 [notice] 23#23: exit
+2023/02/20 22:19:27 [notice] 27#27: gracefully shutting down
+2023/02/20 22:19:27 [notice] 26#26: exiting
+2023/02/20 22:19:27 [notice] 24#24: exit
+2023/02/20 22:19:27 [notice] 28#28: gracefully shutting down
+2023/02/20 22:19:27 [notice] 25#25: exit
+2023/02/20 22:19:27 [notice] 27#27: exiting
+2023/02/20 22:19:27 [notice] 29#29: gracefully shutting down
+2023/02/20 22:19:27 [notice] 26#26: exit
+2023/02/20 22:19:27 [notice] 28#28: exiting
+2023/02/20 22:19:27 [notice] 30#30: gracefully shutting down
+2023/02/20 22:19:27 [notice] 31#31: gracefully shutting down
+2023/02/20 22:19:27 [notice] 32#32: gracefully shutting down
+2023/02/20 22:19:27 [notice] 27#27: exit
+2023/02/20 22:19:27 [notice] 29#29: exiting
+2023/02/20 22:19:27 [notice] 30#30: exiting
+2023/02/20 22:19:27 [notice] 28#28: exit
+2023/02/20 22:19:27 [notice] 35#35: gracefully shutting down
+2023/02/20 22:19:27 [notice] 31#31: exiting
+2023/02/20 22:19:27 [notice] 32#32: exiting
+2023/02/20 22:19:27 [notice] 33#33: gracefully shutting down
+2023/02/20 22:19:27 [notice] 35#35: exiting
+2023/02/20 22:19:27 [notice] 29#29: exit
+2023/02/20 22:19:27 [notice] 30#30: exit
+2023/02/20 22:19:27 [notice] 33#33: exiting
+2023/02/20 22:19:27 [notice] 32#32: exit
+2023/02/20 22:19:27 [notice] 34#34: gracefully shutting down
+2023/02/20 22:19:27 [notice] 31#31: exit
+2023/02/20 22:19:27 [notice] 33#33: exit
+2023/02/20 22:19:27 [notice] 35#35: exit
+2023/02/20 22:19:27 [notice] 34#34: exiting
+2023/02/20 22:19:27 [notice] 34#34: exit
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 22:19:27 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/20 22:19:27 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/02/20 22:19:27 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/20 22:19:27 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/20 22:19:27 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:19:27 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/20 22:19:27 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:19:27 [notice] 1#1: exit
+2023/02/20 22:19:29 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:19:29 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:19:29 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:19:29 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:19:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:19:29 [notice] 1#1: start worker processes
+2023/02/20 22:19:29 [notice] 1#1: start worker process 20
+2023/02/20 22:19:29 [notice] 1#1: start worker process 21
+2023/02/20 22:19:29 [notice] 1#1: start worker process 22
+2023/02/20 22:19:29 [notice] 1#1: start worker process 23
+2023/02/20 22:19:29 [notice] 1#1: start worker process 24
+2023/02/20 22:19:29 [notice] 1#1: start worker process 25
+2023/02/20 22:19:29 [notice] 1#1: start worker process 26
+2023/02/20 22:19:29 [notice] 1#1: start worker process 27
+2023/02/20 22:19:29 [notice] 1#1: start worker process 28
+2023/02/20 22:19:29 [notice] 1#1: start worker process 29
+2023/02/20 22:19:29 [notice] 1#1: start worker process 30
+2023/02/20 22:19:29 [notice] 1#1: start worker process 31
+2023/02/20 22:19:29 [notice] 1#1: start worker process 32
+2023/02/20 22:19:29 [notice] 1#1: start worker process 33
+2023/02/20 22:19:29 [notice] 1#1: start worker process 34
+2023/02/20 22:19:29 [notice] 1#1: start worker process 35
+2023/02/20 22:21:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/20 22:21:16 [notice] 20#20: gracefully shutting down
+2023/02/20 22:21:16 [notice] 21#21: gracefully shutting down
+2023/02/20 22:21:16 [notice] 22#22: gracefully shutting down
+2023/02/20 22:21:16 [notice] 20#20: exiting
+2023/02/20 22:21:16 [notice] 23#23: gracefully shutting down
+2023/02/20 22:21:16 [notice] 21#21: exiting
+2023/02/20 22:21:16 [notice] 24#24: gracefully shutting down
+2023/02/20 22:21:16 [notice] 22#22: exiting
+2023/02/20 22:21:16 [notice] 23#23: exiting
+2023/02/20 22:21:16 [notice] 25#25: gracefully shutting down
+2023/02/20 22:21:16 [notice] 26#26: gracefully shutting down
+2023/02/20 22:21:16 [notice] 21#21: exit
+2023/02/20 22:21:16 [notice] 24#24: exiting
+2023/02/20 22:21:16 [notice] 20#20: exit
+2023/02/20 22:21:16 [notice] 22#22: exit
+2023/02/20 22:21:16 [notice] 23#23: exit
+2023/02/20 22:21:16 [notice] 25#25: exiting
+2023/02/20 22:21:16 [notice] 27#27: gracefully shutting down
+2023/02/20 22:21:16 [notice] 26#26: exiting
+2023/02/20 22:21:16 [notice] 24#24: exit
+2023/02/20 22:21:16 [notice] 28#28: gracefully shutting down
+2023/02/20 22:21:16 [notice] 27#27: exiting
+2023/02/20 22:21:16 [notice] 25#25: exit
+2023/02/20 22:21:16 [notice] 29#29: gracefully shutting down
+2023/02/20 22:21:16 [notice] 26#26: exit
+2023/02/20 22:21:16 [notice] 30#30: gracefully shutting down
+2023/02/20 22:21:16 [notice] 28#28: exiting
+2023/02/20 22:21:16 [notice] 27#27: exit
+2023/02/20 22:21:16 [notice] 29#29: exiting
+2023/02/20 22:21:16 [notice] 30#30: exiting
+2023/02/20 22:21:16 [notice] 33#33: gracefully shutting down
+2023/02/20 22:21:16 [notice] 31#31: gracefully shutting down
+2023/02/20 22:21:16 [notice] 28#28: exit
+2023/02/20 22:21:16 [notice] 29#29: exit
+2023/02/20 22:21:16 [notice] 33#33: exiting
+2023/02/20 22:21:16 [notice] 30#30: exit
+2023/02/20 22:21:16 [notice] 31#31: exiting
+2023/02/20 22:21:16 [notice] 32#32: gracefully shutting down
+2023/02/20 22:21:16 [notice] 35#35: gracefully shutting down
+2023/02/20 22:21:16 [notice] 33#33: exit
+2023/02/20 22:21:16 [notice] 32#32: exiting
+2023/02/20 22:21:16 [notice] 31#31: exit
+2023/02/20 22:21:16 [notice] 35#35: exiting
+2023/02/20 22:21:16 [notice] 34#34: gracefully shutting down
+2023/02/20 22:21:16 [notice] 32#32: exit
+2023/02/20 22:21:16 [notice] 35#35: exit
+2023/02/20 22:21:16 [notice] 34#34: exiting
+2023/02/20 22:21:16 [notice] 34#34: exit
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/20 22:21:16 [notice] 1#1: worker process 22 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 23 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 24 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 26 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 27 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 30 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 31 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 32 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 34 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 35 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/20 22:21:16 [notice] 1#1: worker process 21 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/02/20 22:21:16 [notice] 1#1: worker process 25 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/02/20 22:21:16 [notice] 1#1: worker process 28 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 29 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: worker process 33 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/20 22:21:16 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/20 22:21:16 [notice] 1#1: worker process 20 exited with code 0
+2023/02/20 22:21:16 [notice] 1#1: exit
+2023/02/20 22:21:18 [notice] 1#1: using the "epoll" event method
+2023/02/20 22:21:18 [notice] 1#1: nginx/1.23.3
+2023/02/20 22:21:18 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 22:21:18 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 22:21:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 22:21:18 [notice] 1#1: start worker processes
+2023/02/20 22:21:18 [notice] 1#1: start worker process 20
+2023/02/20 22:21:18 [notice] 1#1: start worker process 21
+2023/02/20 22:21:18 [notice] 1#1: start worker process 22
+2023/02/20 22:21:18 [notice] 1#1: start worker process 23
+2023/02/20 22:21:18 [notice] 1#1: start worker process 24
+2023/02/20 22:21:18 [notice] 1#1: start worker process 25
+2023/02/20 22:21:18 [notice] 1#1: start worker process 26
+2023/02/20 22:21:18 [notice] 1#1: start worker process 27
+2023/02/20 22:21:18 [notice] 1#1: start worker process 28
+2023/02/20 22:21:18 [notice] 1#1: start worker process 29
+2023/02/20 22:21:18 [notice] 1#1: start worker process 30
+2023/02/20 22:21:18 [notice] 1#1: start worker process 31
+2023/02/20 22:21:18 [notice] 1#1: start worker process 32
+2023/02/20 22:21:18 [notice] 1#1: start worker process 33
+2023/02/20 22:21:18 [notice] 1#1: start worker process 34
+2023/02/20 22:21:18 [notice] 1#1: start worker process 35
+2023/02/20 23:20:25 [notice] 1#1: using the "epoll" event method
+2023/02/20 23:20:25 [notice] 1#1: nginx/1.23.3
+2023/02/20 23:20:25 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/20 23:20:25 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/20 23:20:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/20 23:20:25 [notice] 1#1: start worker processes
+2023/02/20 23:20:25 [notice] 1#1: start worker process 20
+2023/02/20 23:20:25 [notice] 1#1: start worker process 21
+2023/02/20 23:20:25 [notice] 1#1: start worker process 22
+2023/02/20 23:20:25 [notice] 1#1: start worker process 23
+2023/02/20 23:20:25 [notice] 1#1: start worker process 24
+2023/02/20 23:20:25 [notice] 1#1: start worker process 25
+2023/02/20 23:20:25 [notice] 1#1: start worker process 26
+2023/02/20 23:20:25 [notice] 1#1: start worker process 27
+2023/02/20 23:20:25 [notice] 1#1: start worker process 28
+2023/02/20 23:20:25 [notice] 1#1: start worker process 29
+2023/02/20 23:20:25 [notice] 1#1: start worker process 30
+2023/02/20 23:20:25 [notice] 1#1: start worker process 31
+2023/02/20 23:20:25 [notice] 1#1: start worker process 32
+2023/02/20 23:20:25 [notice] 1#1: start worker process 33
+2023/02/20 23:20:25 [notice] 1#1: start worker process 34
+2023/02/20 23:20:25 [notice] 1#1: start worker process 35
+2023/02/21 00:00:55 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 00:10:08 [error] 21#21: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 00:49:20 [error] 22#22: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 00:49:26 [error] 22#22: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 00:49:26 [error] 22#22: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 01:13:31 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 01:13:31 [notice] 20#20: gracefully shutting down
+2023/02/21 01:13:31 [notice] 21#21: gracefully shutting down
+2023/02/21 01:13:31 [notice] 20#20: exiting
+2023/02/21 01:13:31 [notice] 22#22: gracefully shutting down
+2023/02/21 01:13:31 [notice] 23#23: gracefully shutting down
+2023/02/21 01:13:31 [notice] 21#21: exiting
+2023/02/21 01:13:31 [notice] 24#24: gracefully shutting down
+2023/02/21 01:13:31 [notice] 22#22: exiting
+2023/02/21 01:13:31 [notice] 20#20: exit
+2023/02/21 01:13:31 [notice] 25#25: gracefully shutting down
+2023/02/21 01:13:31 [notice] 23#23: exiting
+2023/02/21 01:13:31 [notice] 26#26: gracefully shutting down
+2023/02/21 01:13:31 [notice] 24#24: exiting
+2023/02/21 01:13:31 [notice] 21#21: exit
+2023/02/21 01:13:31 [notice] 22#22: exit
+2023/02/21 01:13:31 [notice] 27#27: gracefully shutting down
+2023/02/21 01:13:31 [notice] 23#23: exit
+2023/02/21 01:13:31 [notice] 25#25: exiting
+2023/02/21 01:13:31 [notice] 28#28: gracefully shutting down
+2023/02/21 01:13:31 [notice] 26#26: exiting
+2023/02/21 01:13:31 [notice] 24#24: exit
+2023/02/21 01:13:31 [notice] 29#29: gracefully shutting down
+2023/02/21 01:13:31 [notice] 27#27: exiting
+2023/02/21 01:13:31 [notice] 30#30: gracefully shutting down
+2023/02/21 01:13:31 [notice] 25#25: exit
+2023/02/21 01:13:31 [notice] 28#28: exiting
+2023/02/21 01:13:31 [notice] 31#31: gracefully shutting down
+2023/02/21 01:13:31 [notice] 26#26: exit
+2023/02/21 01:13:31 [notice] 29#29: exiting
+2023/02/21 01:13:31 [notice] 33#33: gracefully shutting down
+2023/02/21 01:13:31 [notice] 27#27: exit
+2023/02/21 01:13:31 [notice] 30#30: exiting
+2023/02/21 01:13:31 [notice] 28#28: exit
+2023/02/21 01:13:31 [notice] 35#35: gracefully shutting down
+2023/02/21 01:13:31 [notice] 31#31: exiting
+2023/02/21 01:13:31 [notice] 29#29: exit
+2023/02/21 01:13:31 [notice] 32#32: gracefully shutting down
+2023/02/21 01:13:31 [notice] 33#33: exiting
+2023/02/21 01:13:31 [notice] 30#30: exit
+2023/02/21 01:13:31 [notice] 35#35: exiting
+2023/02/21 01:13:31 [notice] 31#31: exit
+2023/02/21 01:13:31 [notice] 32#32: exiting
+2023/02/21 01:13:31 [notice] 33#33: exit
+2023/02/21 01:13:31 [notice] 35#35: exit
+2023/02/21 01:13:31 [notice] 32#32: exit
+2023/02/21 01:13:31 [notice] 34#34: gracefully shutting down
+2023/02/21 01:13:31 [notice] 34#34: exiting
+2023/02/21 01:13:31 [notice] 34#34: exit
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/02/21 01:13:31 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 27 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/21 01:13:31 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/21 01:13:31 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/21 01:13:31 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 28 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/02/21 01:13:31 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 01:13:31 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/02/21 01:13:31 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 01:13:31 [notice] 1#1: exit
+2023/02/21 02:06:22 [notice] 1#1: using the "epoll" event method
+2023/02/21 02:06:22 [notice] 1#1: nginx/1.23.3
+2023/02/21 02:06:22 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/21 02:06:22 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/21 02:06:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/21 02:06:22 [notice] 1#1: start worker processes
+2023/02/21 02:06:22 [notice] 1#1: start worker process 20
+2023/02/21 02:06:22 [notice] 1#1: start worker process 21
+2023/02/21 02:06:22 [notice] 1#1: start worker process 22
+2023/02/21 02:06:22 [notice] 1#1: start worker process 23
+2023/02/21 02:06:22 [notice] 1#1: start worker process 24
+2023/02/21 02:06:22 [notice] 1#1: start worker process 25
+2023/02/21 02:06:22 [notice] 1#1: start worker process 26
+2023/02/21 02:06:22 [notice] 1#1: start worker process 27
+2023/02/21 02:06:22 [notice] 1#1: start worker process 28
+2023/02/21 02:06:22 [notice] 1#1: start worker process 29
+2023/02/21 02:06:22 [notice] 1#1: start worker process 30
+2023/02/21 02:06:22 [notice] 1#1: start worker process 31
+2023/02/21 02:06:22 [notice] 1#1: start worker process 32
+2023/02/21 02:06:22 [notice] 1#1: start worker process 33
+2023/02/21 02:06:22 [notice] 1#1: start worker process 34
+2023/02/21 02:06:22 [notice] 1#1: start worker process 35
+2023/02/21 02:55:45 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:17:45 [error] 21#21: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:21:46 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 03:21:46 [notice] 20#20: gracefully shutting down
+2023/02/21 03:21:46 [notice] 21#21: gracefully shutting down
+2023/02/21 03:21:46 [notice] 20#20: exiting
+2023/02/21 03:21:46 [notice] 21#21: exiting
+2023/02/21 03:21:46 [notice] 22#22: gracefully shutting down
+2023/02/21 03:21:46 [notice] 23#23: gracefully shutting down
+2023/02/21 03:21:46 [notice] 20#20: exit
+2023/02/21 03:21:46 [notice] 24#24: gracefully shutting down
+2023/02/21 03:21:46 [notice] 22#22: exiting
+2023/02/21 03:21:46 [notice] 21#21: exit
+2023/02/21 03:21:46 [notice] 23#23: exiting
+2023/02/21 03:21:46 [notice] 25#25: gracefully shutting down
+2023/02/21 03:21:46 [notice] 24#24: exiting
+2023/02/21 03:21:46 [notice] 26#26: gracefully shutting down
+2023/02/21 03:21:46 [notice] 25#25: exiting
+2023/02/21 03:21:46 [notice] 22#22: exit
+2023/02/21 03:21:46 [notice] 23#23: exit
+2023/02/21 03:21:46 [notice] 24#24: exit
+2023/02/21 03:21:46 [notice] 27#27: gracefully shutting down
+2023/02/21 03:21:46 [notice] 28#28: gracefully shutting down
+2023/02/21 03:21:46 [notice] 26#26: exiting
+2023/02/21 03:21:46 [notice] 25#25: exit
+2023/02/21 03:21:46 [notice] 27#27: exiting
+2023/02/21 03:21:46 [notice] 29#29: gracefully shutting down
+2023/02/21 03:21:46 [notice] 28#28: exiting
+2023/02/21 03:21:46 [notice] 26#26: exit
+2023/02/21 03:21:46 [notice] 30#30: gracefully shutting down
+2023/02/21 03:21:46 [notice] 27#27: exit
+2023/02/21 03:21:46 [notice] 31#31: gracefully shutting down
+2023/02/21 03:21:46 [notice] 28#28: exit
+2023/02/21 03:21:46 [notice] 29#29: exiting
+2023/02/21 03:21:46 [notice] 33#33: gracefully shutting down
+2023/02/21 03:21:46 [notice] 32#32: gracefully shutting down
+2023/02/21 03:21:46 [notice] 30#30: exiting
+2023/02/21 03:21:46 [notice] 31#31: exiting
+2023/02/21 03:21:46 [notice] 29#29: exit
+2023/02/21 03:21:46 [notice] 33#33: exiting
+2023/02/21 03:21:46 [notice] 32#32: exiting
+2023/02/21 03:21:46 [notice] 30#30: exit
+2023/02/21 03:21:46 [notice] 31#31: exit
+2023/02/21 03:21:46 [notice] 33#33: exit
+2023/02/21 03:21:46 [notice] 32#32: exit
+2023/02/21 03:21:46 [notice] 34#34: gracefully shutting down
+2023/02/21 03:21:46 [notice] 35#35: gracefully shutting down
+2023/02/21 03:21:46 [notice] 34#34: exiting
+2023/02/21 03:21:46 [notice] 35#35: exiting
+2023/02/21 03:21:46 [notice] 34#34: exit
+2023/02/21 03:21:46 [notice] 35#35: exit
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/21 03:21:46 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/21 03:21:46 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/02/21 03:21:46 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 28 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/21 03:21:46 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/21 03:21:46 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 27 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/21 03:21:46 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:21:46 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/21 03:21:46 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 03:21:46 [notice] 1#1: exit
+2023/02/21 03:31:17 [notice] 1#1: using the "epoll" event method
+2023/02/21 03:31:17 [notice] 1#1: nginx/1.23.3
+2023/02/21 03:31:17 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/21 03:31:17 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/21 03:31:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/21 03:31:17 [notice] 1#1: start worker processes
+2023/02/21 03:31:17 [notice] 1#1: start worker process 20
+2023/02/21 03:31:17 [notice] 1#1: start worker process 21
+2023/02/21 03:31:17 [notice] 1#1: start worker process 22
+2023/02/21 03:31:17 [notice] 1#1: start worker process 23
+2023/02/21 03:31:17 [notice] 1#1: start worker process 24
+2023/02/21 03:31:17 [notice] 1#1: start worker process 25
+2023/02/21 03:31:17 [notice] 1#1: start worker process 26
+2023/02/21 03:31:17 [notice] 1#1: start worker process 27
+2023/02/21 03:31:17 [notice] 1#1: start worker process 28
+2023/02/21 03:31:17 [notice] 1#1: start worker process 29
+2023/02/21 03:31:17 [notice] 1#1: start worker process 30
+2023/02/21 03:31:17 [notice] 1#1: start worker process 31
+2023/02/21 03:31:17 [notice] 1#1: start worker process 32
+2023/02/21 03:31:17 [notice] 1#1: start worker process 33
+2023/02/21 03:31:17 [notice] 1#1: start worker process 34
+2023/02/21 03:31:17 [notice] 1#1: start worker process 35
+2023/02/21 03:31:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 03:31:21 [notice] 20#20: gracefully shutting down
+2023/02/21 03:31:21 [notice] 21#21: gracefully shutting down
+2023/02/21 03:31:21 [notice] 22#22: gracefully shutting down
+2023/02/21 03:31:21 [notice] 20#20: exiting
+2023/02/21 03:31:21 [notice] 23#23: gracefully shutting down
+2023/02/21 03:31:21 [notice] 21#21: exiting
+2023/02/21 03:31:21 [notice] 22#22: exiting
+2023/02/21 03:31:21 [notice] 24#24: gracefully shutting down
+2023/02/21 03:31:21 [notice] 20#20: exit
+2023/02/21 03:31:21 [notice] 23#23: exiting
+2023/02/21 03:31:21 [notice] 25#25: gracefully shutting down
+2023/02/21 03:31:21 [notice] 22#22: exit
+2023/02/21 03:31:21 [notice] 26#26: gracefully shutting down
+2023/02/21 03:31:21 [notice] 21#21: exit
+2023/02/21 03:31:21 [notice] 24#24: exiting
+2023/02/21 03:31:21 [notice] 27#27: gracefully shutting down
+2023/02/21 03:31:21 [notice] 23#23: exit
+2023/02/21 03:31:21 [notice] 25#25: exiting
+2023/02/21 03:31:21 [notice] 26#26: exiting
+2023/02/21 03:31:21 [notice] 28#28: gracefully shutting down
+2023/02/21 03:31:21 [notice] 24#24: exit
+2023/02/21 03:31:21 [notice] 27#27: exiting
+2023/02/21 03:31:21 [notice] 25#25: exit
+2023/02/21 03:31:21 [notice] 29#29: gracefully shutting down
+2023/02/21 03:31:21 [notice] 26#26: exit
+2023/02/21 03:31:21 [notice] 28#28: exiting
+2023/02/21 03:31:21 [notice] 27#27: exit
+2023/02/21 03:31:21 [notice] 30#30: gracefully shutting down
+2023/02/21 03:31:21 [notice] 29#29: exiting
+2023/02/21 03:31:21 [notice] 31#31: gracefully shutting down
+2023/02/21 03:31:21 [notice] 28#28: exit
+2023/02/21 03:31:21 [notice] 30#30: exiting
+2023/02/21 03:31:21 [notice] 34#34: gracefully shutting down
+2023/02/21 03:31:21 [notice] 29#29: exit
+2023/02/21 03:31:21 [notice] 31#31: exiting
+2023/02/21 03:31:21 [notice] 35#35: gracefully shutting down
+2023/02/21 03:31:21 [notice] 34#34: exiting
+2023/02/21 03:31:21 [notice] 31#31: exit
+2023/02/21 03:31:21 [notice] 35#35: exiting
+2023/02/21 03:31:21 [notice] 30#30: exit
+2023/02/21 03:31:21 [notice] 34#34: exit
+2023/02/21 03:31:21 [notice] 35#35: exit
+2023/02/21 03:31:21 [notice] 33#33: gracefully shutting down
+2023/02/21 03:31:21 [notice] 33#33: exiting
+2023/02/21 03:31:21 [notice] 33#33: exit
+2023/02/21 03:31:21 [notice] 32#32: gracefully shutting down
+2023/02/21 03:31:21 [notice] 32#32: exiting
+2023/02/21 03:31:21 [notice] 32#32: exit
+2023/02/21 03:31:21 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/21 03:31:21 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:31:21 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/02/21 03:31:21 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:31:21 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/21 03:31:21 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:31:21 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/21 03:31:21 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 03:31:21 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:40:52 [notice] 1#1: using the "epoll" event method
+2023/02/21 03:40:52 [notice] 1#1: nginx/1.23.3
+2023/02/21 03:40:52 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/21 03:40:52 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/21 03:40:52 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/21 03:40:52 [notice] 1#1: start worker processes
+2023/02/21 03:40:52 [notice] 1#1: start worker process 20
+2023/02/21 03:40:52 [notice] 1#1: start worker process 21
+2023/02/21 03:40:52 [notice] 1#1: start worker process 22
+2023/02/21 03:40:52 [notice] 1#1: start worker process 23
+2023/02/21 03:40:52 [notice] 1#1: start worker process 24
+2023/02/21 03:40:52 [notice] 1#1: start worker process 25
+2023/02/21 03:40:52 [notice] 1#1: start worker process 26
+2023/02/21 03:40:52 [notice] 1#1: start worker process 27
+2023/02/21 03:40:52 [notice] 1#1: start worker process 28
+2023/02/21 03:40:52 [notice] 1#1: start worker process 29
+2023/02/21 03:40:52 [notice] 1#1: start worker process 30
+2023/02/21 03:40:52 [notice] 1#1: start worker process 31
+2023/02/21 03:40:52 [notice] 1#1: start worker process 32
+2023/02/21 03:40:52 [notice] 1#1: start worker process 33
+2023/02/21 03:40:52 [notice] 1#1: start worker process 34
+2023/02/21 03:40:52 [notice] 1#1: start worker process 35
+2023/02/21 03:45:55 [error] 20#20: *1 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:45:55 [error] 21#21: *8 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:45:55 [error] 22#22: *10 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:45:55 [error] 23#23: *12 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:45:55 [error] 24#24: *14 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:45:55 [error] 25#25: *16 upstream prematurely closed connection while reading response header from upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:46:51 [error] 25#25: *16 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "POST /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:46:59 [error] 25#25: *16 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 26#26: *21 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 27#27: *23 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 29#29: *27 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 28#28: *25 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 30#30: *29 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:19 [error] 25#25: *16 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:22 [error] 30#30: *29 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:47:22 [error] 28#28: *25 connect() failed (113: No route to host) while connecting to upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "OPTIONS /api/auth/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/auth/", host: "localhost", referrer: "http://localhost:3000/"
+2023/02/21 03:56:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 03:56:02 [notice] 20#20: gracefully shutting down
+2023/02/21 03:56:02 [notice] 21#21: gracefully shutting down
+2023/02/21 03:56:02 [notice] 22#22: gracefully shutting down
+2023/02/21 03:56:02 [notice] 23#23: gracefully shutting down
+2023/02/21 03:56:02 [notice] 20#20: exiting
+2023/02/21 03:56:02 [notice] 24#24: gracefully shutting down
+2023/02/21 03:56:02 [notice] 21#21: exiting
+2023/02/21 03:56:02 [notice] 25#25: gracefully shutting down
+2023/02/21 03:56:02 [notice] 22#22: exiting
+2023/02/21 03:56:02 [notice] 26#26: gracefully shutting down
+2023/02/21 03:56:02 [notice] 23#23: exiting
+2023/02/21 03:56:02 [notice] 24#24: exiting
+2023/02/21 03:56:02 [notice] 21#21: exit
+2023/02/21 03:56:02 [notice] 20#20: exit
+2023/02/21 03:56:02 [notice] 27#27: gracefully shutting down
+2023/02/21 03:56:02 [notice] 28#28: gracefully shutting down
+2023/02/21 03:56:02 [notice] 25#25: exiting
+2023/02/21 03:56:02 [notice] 22#22: exit
+2023/02/21 03:56:02 [notice] 24#24: exit
+2023/02/21 03:56:02 [notice] 23#23: exit
+2023/02/21 03:56:02 [notice] 29#29: gracefully shutting down
+2023/02/21 03:56:02 [notice] 26#26: exiting
+2023/02/21 03:56:02 [notice] 30#30: gracefully shutting down
+2023/02/21 03:56:02 [notice] 25#25: exit
+2023/02/21 03:56:02 [notice] 27#27: exiting
+2023/02/21 03:56:02 [notice] 28#28: exiting
+2023/02/21 03:56:02 [notice] 26#26: exit
+2023/02/21 03:56:02 [notice] 29#29: exiting
+2023/02/21 03:56:02 [notice] 27#27: exit
+2023/02/21 03:56:02 [notice] 30#30: exiting
+2023/02/21 03:56:02 [notice] 32#32: gracefully shutting down
+2023/02/21 03:56:02 [notice] 28#28: exit
+2023/02/21 03:56:02 [notice] 31#31: gracefully shutting down
+2023/02/21 03:56:02 [notice] 29#29: exit
+2023/02/21 03:56:02 [notice] 30#30: exit
+2023/02/21 03:56:02 [notice] 34#34: gracefully shutting down
+2023/02/21 03:56:02 [notice] 32#32: exiting
+2023/02/21 03:56:02 [notice] 33#33: gracefully shutting down
+2023/02/21 03:56:02 [notice] 31#31: exiting
+2023/02/21 03:56:02 [notice] 35#35: gracefully shutting down
+2023/02/21 03:56:02 [notice] 34#34: exiting
+2023/02/21 03:56:02 [notice] 32#32: exit
+2023/02/21 03:56:02 [notice] 31#31: exit
+2023/02/21 03:56:02 [notice] 33#33: exiting
+2023/02/21 03:56:02 [notice] 34#34: exit
+2023/02/21 03:56:02 [notice] 35#35: exiting
+2023/02/21 03:56:02 [notice] 33#33: exit
+2023/02/21 03:56:02 [notice] 35#35: exit
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/02/21 03:56:02 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 27 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 28 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/02/21 03:56:02 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2023/02/21 03:56:02 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/02/21 03:56:02 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/02/21 03:56:02 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/02/21 03:56:02 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 03:56:02 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/21 03:56:02 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 03:56:02 [notice] 1#1: exit
+2023/02/21 11:22:55 [notice] 1#1: using the "epoll" event method
+2023/02/21 11:22:55 [notice] 1#1: nginx/1.23.3
+2023/02/21 11:22:55 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/21 11:22:55 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/21 11:22:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/21 11:22:55 [notice] 1#1: start worker processes
+2023/02/21 11:22:55 [notice] 1#1: start worker process 20
+2023/02/21 11:22:55 [notice] 1#1: start worker process 21
+2023/02/21 11:22:55 [notice] 1#1: start worker process 22
+2023/02/21 11:22:55 [notice] 1#1: start worker process 23
+2023/02/21 11:22:55 [notice] 1#1: start worker process 24
+2023/02/21 11:22:55 [notice] 1#1: start worker process 25
+2023/02/21 11:22:55 [notice] 1#1: start worker process 26
+2023/02/21 11:22:55 [notice] 1#1: start worker process 27
+2023/02/21 11:22:55 [notice] 1#1: start worker process 28
+2023/02/21 11:22:55 [notice] 1#1: start worker process 29
+2023/02/21 11:22:55 [notice] 1#1: start worker process 30
+2023/02/21 11:22:55 [notice] 1#1: start worker process 31
+2023/02/21 11:22:55 [notice] 1#1: start worker process 32
+2023/02/21 11:22:55 [notice] 1#1: start worker process 33
+2023/02/21 11:22:55 [notice] 1#1: start worker process 34
+2023/02/21 11:22:55 [notice] 1#1: start worker process 35
+2023/02/21 11:25:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 11:25:43 [notice] 21#21: gracefully shutting down
+2023/02/21 11:25:43 [notice] 20#20: gracefully shutting down
+2023/02/21 11:25:43 [notice] 22#22: gracefully shutting down
+2023/02/21 11:25:43 [notice] 21#21: exiting
+2023/02/21 11:25:43 [notice] 23#23: gracefully shutting down
+2023/02/21 11:25:43 [notice] 20#20: exiting
+2023/02/21 11:25:43 [notice] 22#22: exiting
+2023/02/21 11:25:43 [notice] 24#24: gracefully shutting down
+2023/02/21 11:25:43 [notice] 23#23: exiting
+2023/02/21 11:25:43 [notice] 21#21: exit
+2023/02/21 11:25:43 [notice] 25#25: gracefully shutting down
+2023/02/21 11:25:43 [notice] 24#24: exiting
+2023/02/21 11:25:43 [notice] 20#20: exit
+2023/02/21 11:25:43 [notice] 26#26: gracefully shutting down
+2023/02/21 11:25:43 [notice] 22#22: exit
+2023/02/21 11:25:43 [notice] 23#23: exit
+2023/02/21 11:25:43 [notice] 27#27: gracefully shutting down
+2023/02/21 11:25:43 [notice] 25#25: exiting
+2023/02/21 11:25:43 [notice] 26#26: exiting
+2023/02/21 11:25:43 [notice] 28#28: gracefully shutting down
+2023/02/21 11:25:43 [notice] 24#24: exit
+2023/02/21 11:25:43 [notice] 27#27: exiting
+2023/02/21 11:25:43 [notice] 28#28: exiting
+2023/02/21 11:25:43 [notice] 29#29: gracefully shutting down
+2023/02/21 11:25:43 [notice] 26#26: exit
+2023/02/21 11:25:43 [notice] 30#30: gracefully shutting down
+2023/02/21 11:25:43 [notice] 25#25: exit
+2023/02/21 11:25:43 [notice] 27#27: exit
+2023/02/21 11:25:43 [notice] 31#31: gracefully shutting down
+2023/02/21 11:25:43 [notice] 29#29: exiting
+2023/02/21 11:25:43 [notice] 32#32: gracefully shutting down
+2023/02/21 11:25:43 [notice] 28#28: exit
+2023/02/21 11:25:43 [notice] 30#30: exiting
+2023/02/21 11:25:43 [notice] 35#35: gracefully shutting down
+2023/02/21 11:25:43 [notice] 31#31: exiting
+2023/02/21 11:25:43 [notice] 29#29: exit
+2023/02/21 11:25:43 [notice] 32#32: exiting
+2023/02/21 11:25:43 [notice] 30#30: exit
+2023/02/21 11:25:43 [notice] 35#35: exiting
+2023/02/21 11:25:43 [notice] 31#31: exit
+2023/02/21 11:25:43 [notice] 32#32: exit
+2023/02/21 11:25:43 [notice] 35#35: exit
+2023/02/21 11:25:43 [notice] 33#33: gracefully shutting down
+2023/02/21 11:25:43 [notice] 34#34: gracefully shutting down
+2023/02/21 11:25:43 [notice] 33#33: exiting
+2023/02/21 11:25:43 [notice] 34#34: exiting
+2023/02/21 11:25:43 [notice] 33#33: exit
+2023/02/21 11:25:43 [notice] 34#34: exit
+2023/02/21 11:25:43 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/21 11:25:43 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 28 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:25:43 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/02/21 11:25:43 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/21 11:25:43 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 27 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:25:43 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/02/21 11:25:43 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 11:25:43 [notice] 1#1: exit
+2023/02/21 11:29:06 [notice] 1#1: using the "epoll" event method
+2023/02/21 11:29:06 [notice] 1#1: nginx/1.23.3
+2023/02/21 11:29:06 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/02/21 11:29:06 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/02/21 11:29:06 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/02/21 11:29:06 [notice] 1#1: start worker processes
+2023/02/21 11:29:06 [notice] 1#1: start worker process 20
+2023/02/21 11:29:06 [notice] 1#1: start worker process 21
+2023/02/21 11:29:06 [notice] 1#1: start worker process 22
+2023/02/21 11:29:06 [notice] 1#1: start worker process 23
+2023/02/21 11:29:06 [notice] 1#1: start worker process 24
+2023/02/21 11:29:06 [notice] 1#1: start worker process 25
+2023/02/21 11:29:06 [notice] 1#1: start worker process 26
+2023/02/21 11:29:06 [notice] 1#1: start worker process 27
+2023/02/21 11:29:06 [notice] 1#1: start worker process 28
+2023/02/21 11:29:06 [notice] 1#1: start worker process 29
+2023/02/21 11:29:06 [notice] 1#1: start worker process 30
+2023/02/21 11:29:06 [notice] 1#1: start worker process 31
+2023/02/21 11:29:06 [notice] 1#1: start worker process 32
+2023/02/21 11:29:06 [notice] 1#1: start worker process 33
+2023/02/21 11:29:06 [notice] 1#1: start worker process 34
+2023/02/21 11:29:06 [notice] 1#1: start worker process 35
+2023/02/21 11:33:59 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/02/21 11:33:59 [notice] 20#20: gracefully shutting down
+2023/02/21 11:33:59 [notice] 21#21: gracefully shutting down
+2023/02/21 11:33:59 [notice] 20#20: exiting
+2023/02/21 11:33:59 [notice] 22#22: gracefully shutting down
+2023/02/21 11:33:59 [notice] 21#21: exiting
+2023/02/21 11:33:59 [notice] 23#23: gracefully shutting down
+2023/02/21 11:33:59 [notice] 22#22: exiting
+2023/02/21 11:33:59 [notice] 24#24: gracefully shutting down
+2023/02/21 11:33:59 [notice] 20#20: exit
+2023/02/21 11:33:59 [notice] 21#21: exit
+2023/02/21 11:33:59 [notice] 23#23: exiting
+2023/02/21 11:33:59 [notice] 24#24: exiting
+2023/02/21 11:33:59 [notice] 22#22: exit
+2023/02/21 11:33:59 [notice] 26#26: gracefully shutting down
+2023/02/21 11:33:59 [notice] 25#25: gracefully shutting down
+2023/02/21 11:33:59 [notice] 23#23: exit
+2023/02/21 11:33:59 [notice] 27#27: gracefully shutting down
+2023/02/21 11:33:59 [notice] 26#26: exiting
+2023/02/21 11:33:59 [notice] 25#25: exiting
+2023/02/21 11:33:59 [notice] 24#24: exit
+2023/02/21 11:33:59 [notice] 28#28: gracefully shutting down
+2023/02/21 11:33:59 [notice] 27#27: exiting
+2023/02/21 11:33:59 [notice] 29#29: gracefully shutting down
+2023/02/21 11:33:59 [notice] 30#30: gracefully shutting down
+2023/02/21 11:33:59 [notice] 25#25: exit
+2023/02/21 11:33:59 [notice] 26#26: exit
+2023/02/21 11:33:59 [notice] 28#28: exiting
+2023/02/21 11:33:59 [notice] 31#31: gracefully shutting down
+2023/02/21 11:33:59 [notice] 27#27: exit
+2023/02/21 11:33:59 [notice] 29#29: exiting
+2023/02/21 11:33:59 [notice] 30#30: exiting
+2023/02/21 11:33:59 [notice] 32#32: gracefully shutting down
+2023/02/21 11:33:59 [notice] 31#31: exiting
+2023/02/21 11:33:59 [notice] 28#28: exit
+2023/02/21 11:33:59 [notice] 32#32: exiting
+2023/02/21 11:33:59 [notice] 33#33: gracefully shutting down
+2023/02/21 11:33:59 [notice] 29#29: exit
+2023/02/21 11:33:59 [notice] 30#30: exit
+2023/02/21 11:33:59 [notice] 31#31: exit
+2023/02/21 11:33:59 [notice] 33#33: exiting
+2023/02/21 11:33:59 [notice] 32#32: exit
+2023/02/21 11:33:59 [notice] 34#34: gracefully shutting down
+2023/02/21 11:33:59 [notice] 33#33: exit
+2023/02/21 11:33:59 [notice] 34#34: exiting
+2023/02/21 11:33:59 [notice] 34#34: exit
+2023/02/21 11:33:59 [notice] 35#35: gracefully shutting down
+2023/02/21 11:33:59 [notice] 35#35: exiting
+2023/02/21 11:33:59 [notice] 35#35: exit
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/02/21 11:33:59 [notice] 1#1: worker process 33 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 22 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 34 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 24 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/02/21 11:33:59 [notice] 1#1: worker process 23 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 25 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 28 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 29 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 30 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 31 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 35 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/02/21 11:33:59 [notice] 1#1: worker process 20 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 21 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/02/21 11:33:59 [notice] 1#1: worker process 32 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: signal 29 (SIGIO) received
+2023/02/21 11:33:59 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/02/21 11:33:59 [notice] 1#1: worker process 26 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: worker process 27 exited with code 0
+2023/02/21 11:33:59 [notice] 1#1: exit
