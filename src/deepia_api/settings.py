@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-9t!xr*hd7_x$dsxyfu3c6j&7s79($qmk9-+o(p&-(gmwvp(k*t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 # Application definition
 
 SECURE_PROXY_SSL_HEADER = [

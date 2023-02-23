@@ -1,4 +1,5 @@
 from django.http.response import JsonResponse
+from api.gpt3 import exec_gpt3
 from deepia_api.auth import JWTAuthentication
 from content.models import Content
 from content.serializers import ContentSerializer
@@ -7,25 +8,12 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import get_object_or_404
-from stable_diffusion_tf.stable_diffusion import StableDiffusion
 from PIL import Image
 import os
-
-
-def generate_image(text):
-    generator = StableDiffusion(
-        img_height=512,
-        img_width=512,
-        jit_compile=False,
-    )
-    img = generator.generate(
-        text,
-        num_steps=50,
-        unconditional_guidance_scale=7.5,
-        temperature=1,
-        batch_size=1,
-    )
-    return Image.fromarray(img[0]).save("output.png")
+from api.stable_diffusion import exec_stable_diffusion
+from api.gpt3 import exec_gpt3
+from django.core.files.uploadedfile import InMemoryUploadedFile
+import io
 
 def null_check(number):
     if number == None:
@@ -40,20 +28,28 @@ def has_duplicates(seq):
 @permission_classes([IsAuthenticated, ])
 def content_list(request):
     if request.method == 'GET':
-        contents = Content.order_by('-created_at')
+        contents = Content.objects.order_by('-created_at')
         serializer = ContentSerializer(contents, many=True)
         response = Response(serializer.data)
         return response
 
     if request.method == 'POST':
-        # titleから画像を生成
-        # deliverablesに保存
-        os.environ['CUDA_VISIBLE_DEVICES'] = ''
         text = request.data["title"]
+        category_id = request.data['category_id']
+        deliverables = ''
+        if category_id == 0:
+            deliverables = exec_stable_diffusion(text)
+        elif category_id == 1:
+            deliverables = exec_stable_diffusion(text)
+        elif category_id == 2:
+            deliverables = exec_gpt3(text)
+        else:
+            return
+        print(deliverables)
         new_content = {
             "title": text,
-            "deliverables": generate_image(text),
-            "category_id": request.data["category_id"],
+            "deliverables": deliverables,
+            "category_id": category_id,
             "user_id": request.user.id,
         }
         serializer = ContentSerializer(data=new_content)
