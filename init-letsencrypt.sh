@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(deepia-api.xyz)
+domains=(deepia.tokyo)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="deeprecommend@gmail.com"
@@ -66,7 +66,7 @@ esac
 if [ $staging != "0" ]; then staging_arg="--staging"; fi
 
 docker-compose -f docker-compose.prod.yml run --rm --entrypoint "\
-  certbot certonly --webroot -w /var/www/certbot -d deepia-api.xyz \
+  certbot certonly --webroot -w /var/www/certbot -d deepia.tokyo \
     $staging_arg \
     $email_arg \
     --rsa-key-size $rsa_key_size \

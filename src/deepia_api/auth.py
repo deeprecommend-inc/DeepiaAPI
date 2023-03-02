@@ -8,7 +8,6 @@ from .settings import SECRET_KEY
 import jwt
 from user.models import User
 
-
 class JWTAuthentication(BaseAuthentication):
     keyword = 'Bearer'
     model = None

@@ -40,7 +40,7 @@ ALLOWED_HOSTS = [
     '172.27.17.252',
     '192.168.160.1',
     '0.0.0.0',
-    'deepia-api.xyz',
+    'deepia.tokyo',
     'django',
 ]
 
