@@ -5,8 +5,9 @@ def exec_gpt3(text):
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=text,
-        max_tokens=1200,
-        temperature=0.7,
-        frequency_penalty=1.0,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
     )
-    return response['choices'][0]['text']
+    return response.choices[0].text

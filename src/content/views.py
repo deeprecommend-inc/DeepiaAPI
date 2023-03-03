@@ -45,7 +45,6 @@ def content_list(request):
             deliverables = exec_gpt3(text)
         else:
             return
-        print(deliverables)
         new_content = {
             "title": text,
             "deliverables": deliverables,
