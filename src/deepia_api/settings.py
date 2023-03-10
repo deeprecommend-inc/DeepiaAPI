@@ -69,8 +69,8 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
-    'https://deepia.net',
-    'https://www.deepia.net',
+    'https://deepia.space',
+    'https://www.deepia.space',
 ]
 
 CORS_ALLOW_HEADERS = [

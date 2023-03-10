@@ -8,8 +8,8 @@ class CustomCorsMiddleware(MiddlewareMixin):
             response = HttpResponse()
             response['Access-Control-Allow-Origin'] = ','.join([
                 'http://localhost:3000',
-                'https://deepia.net',
-                'https://www.deepia.net',
+                'https://deepia.space',
+                'https://www.deepia.space',
             ])
             response['Access-Control-Allow-Headers'] = ', '.join([
                 'Content-Disposition',
