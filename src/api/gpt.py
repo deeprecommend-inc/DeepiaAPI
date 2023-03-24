@@ -1,6 +1,6 @@
 import openai
 
-def exec_gpt3(text):
+def exec_gpt(text):
     openai.api_key = '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'
     response = openai.Completion.create(
         engine="text-davinci-003",

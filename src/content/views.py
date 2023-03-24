@@ -1,5 +1,5 @@
 from django.http.response import JsonResponse
-from api.gpt3 import exec_gpt3
+from api.gpt import exec_gpt
 from deepia_api.auth import JWTAuthentication
 from content.models import Content
 from content.serializers import ContentSerializer
@@ -11,9 +11,10 @@ from django.shortcuts import get_object_or_404
 from PIL import Image
 import os
 from api.stable_diffusion import exec_stable_diffusion
-from api.gpt3 import exec_gpt3
+from api.gpt import exec_gpt
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import io
+from user.models import User
 
 def null_check(number):
     if number == None:
@@ -42,14 +43,14 @@ def content_list(request):
         elif category_id == 1:
             deliverables = exec_stable_diffusion(text)
         elif category_id == 2:
-            deliverables = exec_gpt3(text)
+            deliverables = exec_gpt(text)
         else:
             return
         new_content = {
             "title": text,
             "deliverables": deliverables,
             "category_id": category_id,
-            "user_id": request.user.id,
+            "user": request.user.id,
         }
         serializer = ContentSerializer(data=new_content)
         if serializer.is_valid():

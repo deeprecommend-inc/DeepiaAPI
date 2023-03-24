@@ -94,6 +94,7 @@ CORS_ORIGIN_WHITELIST = [
     'https://deepia.net',
     'https://www.deepia.net',
 ]
+
 CORS_ALLOW_CREDENTIALS = True
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
