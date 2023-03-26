@@ -38,6 +38,11 @@ def content_list(request):
         text = request.data["title"]
         category_id = request.data['category_id']
         deliverables = ''
+        print(category_id)
+        print(category_id)
+        print(category_id)
+        print(category_id)
+        print(category_id)
         if category_id == 0:
             deliverables = exec_stable_diffusion(text)
         elif category_id == 1:

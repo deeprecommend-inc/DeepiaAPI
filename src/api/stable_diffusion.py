@@ -26,7 +26,7 @@ def exec_stable_diffusion(text):
         seed=34567, # if provided, specifying a random seed makes results deterministic
         steps=20, # defaults to 30 if not specified
     )
-
+    
     # iterating over the generator produces the api response
     for resp in answers:
         for artifact in resp.artifacts:
