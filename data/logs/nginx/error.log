@@ -6513,3 +6513,445 @@
 2023/03/26 19:45:40 [notice] 1#1: signal 17 (SIGCHLD) received from 27
 2023/03/26 19:45:40 [notice] 1#1: worker process 27 exited with code 0
 2023/03/26 19:45:40 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/26 19:45:56 [notice] 1#1: using the "epoll" event method
+2023/03/26 19:45:56 [notice] 1#1: nginx/1.23.3
+2023/03/26 19:45:56 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/26 19:45:56 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/03/26 19:45:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/26 19:45:56 [notice] 1#1: start worker processes
+2023/03/26 19:45:56 [notice] 1#1: start worker process 20
+2023/03/26 19:45:56 [notice] 1#1: start worker process 21
+2023/03/26 19:45:56 [notice] 1#1: start worker process 22
+2023/03/26 19:45:56 [notice] 1#1: start worker process 23
+2023/03/26 19:45:56 [notice] 1#1: start worker process 24
+2023/03/26 19:45:56 [notice] 1#1: start worker process 25
+2023/03/26 19:45:56 [notice] 1#1: start worker process 26
+2023/03/26 19:45:56 [notice] 1#1: start worker process 27
+2023/03/26 19:45:56 [notice] 1#1: start worker process 28
+2023/03/26 19:45:56 [notice] 1#1: start worker process 29
+2023/03/26 19:45:56 [notice] 1#1: start worker process 30
+2023/03/26 19:45:56 [notice] 1#1: start worker process 31
+2023/03/26 19:45:56 [notice] 1#1: start worker process 32
+2023/03/26 19:45:56 [notice] 1#1: start worker process 33
+2023/03/26 19:45:56 [notice] 1#1: start worker process 34
+2023/03/26 19:45:56 [notice] 1#1: start worker process 35
+2023/03/29 10:31:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/29 10:31:39 [notice] 20#20: gracefully shutting down
+2023/03/29 10:31:39 [notice] 21#21: gracefully shutting down
+2023/03/29 10:31:39 [notice] 22#22: gracefully shutting down
+2023/03/29 10:31:39 [notice] 20#20: exiting
+2023/03/29 10:31:39 [notice] 21#21: exiting
+2023/03/29 10:31:39 [notice] 23#23: gracefully shutting down
+2023/03/29 10:31:39 [notice] 24#24: gracefully shutting down
+2023/03/29 10:31:39 [notice] 22#22: exiting
+2023/03/29 10:31:39 [notice] 25#25: gracefully shutting down
+2023/03/29 10:31:39 [notice] 20#20: exit
+2023/03/29 10:31:39 [notice] 21#21: exit
+2023/03/29 10:31:39 [notice] 23#23: exiting
+2023/03/29 10:31:39 [notice] 26#26: gracefully shutting down
+2023/03/29 10:31:39 [notice] 27#27: gracefully shutting down
+2023/03/29 10:31:39 [notice] 22#22: exit
+2023/03/29 10:31:39 [notice] 24#24: exiting
+2023/03/29 10:31:39 [notice] 28#28: gracefully shutting down
+2023/03/29 10:31:39 [notice] 25#25: exiting
+2023/03/29 10:31:39 [notice] 23#23: exit
+2023/03/29 10:31:39 [notice] 29#29: gracefully shutting down
+2023/03/29 10:31:39 [notice] 27#27: exiting
+2023/03/29 10:31:39 [notice] 26#26: exiting
+2023/03/29 10:31:39 [notice] 24#24: exit
+2023/03/29 10:31:39 [notice] 30#30: gracefully shutting down
+2023/03/29 10:31:39 [notice] 28#28: exiting
+2023/03/29 10:31:39 [notice] 31#31: gracefully shutting down
+2023/03/29 10:31:39 [notice] 25#25: exit
+2023/03/29 10:31:39 [notice] 35#35: gracefully shutting down
+2023/03/29 10:31:39 [notice] 33#33: gracefully shutting down
+2023/03/29 10:31:39 [notice] 29#29: exiting
+2023/03/29 10:31:39 [notice] 27#27: exit
+2023/03/29 10:31:39 [notice] 26#26: exit
+2023/03/29 10:31:39 [notice] 30#30: exiting
+2023/03/29 10:31:39 [notice] 28#28: exit
+2023/03/29 10:31:39 [notice] 31#31: exiting
+2023/03/29 10:31:39 [notice] 35#35: exiting
+2023/03/29 10:31:39 [notice] 29#29: exit
+2023/03/29 10:31:39 [notice] 33#33: exiting
+2023/03/29 10:31:39 [notice] 30#30: exit
+2023/03/29 10:31:39 [notice] 31#31: exit
+2023/03/29 10:31:39 [notice] 35#35: exit
+2023/03/29 10:31:39 [notice] 33#33: exit
+2023/03/29 10:31:39 [notice] 34#34: gracefully shutting down
+2023/03/29 10:31:39 [notice] 32#32: gracefully shutting down
+2023/03/29 10:31:39 [notice] 34#34: exiting
+2023/03/29 10:31:39 [notice] 32#32: exiting
+2023/03/29 10:31:39 [notice] 32#32: exit
+2023/03/29 10:31:39 [notice] 34#34: exit
+2023/03/29 10:31:39 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/03/29 10:31:39 [notice] 1#1: worker process 20 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 21 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 22 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 23 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 24 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 26 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 28 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 29 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 30 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 31 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 32 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 33 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 34 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: worker process 35 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/29 10:31:39 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2023/03/29 10:31:39 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/03/29 10:31:39 [notice] 1#1: worker process 25 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/29 10:31:39 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/03/29 10:31:39 [notice] 1#1: worker process 27 exited with code 0
+2023/03/29 10:31:39 [notice] 1#1: exit
+2023/03/29 10:31:44 [notice] 1#1: using the "epoll" event method
+2023/03/29 10:31:44 [notice] 1#1: nginx/1.23.3
+2023/03/29 10:31:44 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/29 10:31:44 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/03/29 10:31:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/29 10:31:44 [notice] 1#1: start worker processes
+2023/03/29 10:31:44 [notice] 1#1: start worker process 20
+2023/03/29 10:31:44 [notice] 1#1: start worker process 21
+2023/03/29 10:31:44 [notice] 1#1: start worker process 22
+2023/03/29 10:31:44 [notice] 1#1: start worker process 23
+2023/03/29 10:31:44 [notice] 1#1: start worker process 24
+2023/03/29 10:31:44 [notice] 1#1: start worker process 25
+2023/03/29 10:31:44 [notice] 1#1: start worker process 26
+2023/03/29 10:31:44 [notice] 1#1: start worker process 27
+2023/03/29 10:31:44 [notice] 1#1: start worker process 28
+2023/03/29 10:31:44 [notice] 1#1: start worker process 29
+2023/03/29 10:31:44 [notice] 1#1: start worker process 30
+2023/03/29 10:31:44 [notice] 1#1: start worker process 31
+2023/03/29 10:31:44 [notice] 1#1: start worker process 32
+2023/03/29 10:31:44 [notice] 1#1: start worker process 33
+2023/03/29 10:31:44 [notice] 1#1: start worker process 34
+2023/03/29 10:31:44 [notice] 1#1: start worker process 35
+2023/03/29 10:34:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/03/29 10:34:14 [notice] 20#20: gracefully shutting down
+2023/03/29 10:34:14 [notice] 21#21: gracefully shutting down
+2023/03/29 10:34:14 [notice] 22#22: gracefully shutting down
+2023/03/29 10:34:14 [notice] 23#23: gracefully shutting down
+2023/03/29 10:34:14 [notice] 22#22: exiting
+2023/03/29 10:34:14 [notice] 23#23: exiting
+2023/03/29 10:34:14 [notice] 25#25: gracefully shutting down
+2023/03/29 10:34:14 [notice] 24#24: gracefully shutting down
+2023/03/29 10:34:14 [notice] 26#26: gracefully shutting down
+2023/03/29 10:34:14 [notice] 22#22: exit
+2023/03/29 10:34:14 [notice] 23#23: exit
+2023/03/29 10:34:14 [notice] 20#20: exiting
+2023/03/29 10:34:14 [notice] 25#25: exiting
+2023/03/29 10:34:14 [notice] 27#27: gracefully shutting down
+2023/03/29 10:34:14 [notice] 21#21: exiting
+2023/03/29 10:34:14 [notice] 24#24: exiting
+2023/03/29 10:34:14 [notice] 26#26: exiting
+2023/03/29 10:34:14 [notice] 28#28: gracefully shutting down
+2023/03/29 10:34:14 [notice] 27#27: exiting
+2023/03/29 10:34:14 [notice] 20#20: exit
+2023/03/29 10:34:14 [notice] 29#29: gracefully shutting down
+2023/03/29 10:34:14 [notice] 25#25: exit
+2023/03/29 10:34:14 [notice] 30#30: gracefully shutting down
+2023/03/29 10:34:14 [notice] 26#26: exit
+2023/03/29 10:34:14 [notice] 28#28: exiting
+2023/03/29 10:34:14 [notice] 21#21: exit
+2023/03/29 10:34:14 [notice] 27#27: exit
+2023/03/29 10:34:14 [notice] 29#29: exiting
+2023/03/29 10:34:14 [notice] 30#30: exiting
+2023/03/29 10:34:14 [notice] 24#24: exit
+2023/03/29 10:34:14 [notice] 28#28: exit
+2023/03/29 10:34:14 [notice] 29#29: exit
+2023/03/29 10:34:14 [notice] 30#30: exit
+2023/03/29 10:34:14 [notice] 35#35: gracefully shutting down
+2023/03/29 10:34:14 [notice] 34#34: gracefully shutting down
+2023/03/29 10:34:14 [notice] 35#35: exiting
+2023/03/29 10:34:14 [notice] 34#34: exiting
+2023/03/29 10:34:14 [notice] 35#35: exit
+2023/03/29 10:34:14 [notice] 34#34: exit
+2023/03/29 10:34:14 [notice] 33#33: gracefully shutting down
+2023/03/29 10:34:14 [notice] 31#31: gracefully shutting down
+2023/03/29 10:34:14 [notice] 32#32: gracefully shutting down
+2023/03/29 10:34:14 [notice] 33#33: exiting
+2023/03/29 10:34:14 [notice] 31#31: exiting
+2023/03/29 10:34:14 [notice] 32#32: exiting
+2023/03/29 10:34:14 [notice] 33#33: exit
+2023/03/29 10:34:14 [notice] 31#31: exit
+2023/03/29 10:34:14 [notice] 32#32: exit
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/03/29 10:34:14 [notice] 1#1: worker process 20 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 21 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 24 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 25 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 28 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 29 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/03/29 10:34:14 [notice] 1#1: worker process 27 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 30 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 32 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/03/29 10:34:14 [notice] 1#1: worker process 34 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: signal 29 (SIGIO) received
+2023/03/29 10:34:14 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/03/29 10:34:14 [notice] 1#1: worker process 22 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 26 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 31 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 33 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 23 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: worker process 35 exited with code 0
+2023/03/29 10:34:14 [notice] 1#1: exit
+2023/03/29 10:34:16 [notice] 1#1: using the "epoll" event method
+2023/03/29 10:34:16 [notice] 1#1: nginx/1.23.3
+2023/03/29 10:34:16 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/03/29 10:34:16 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/03/29 10:34:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/03/29 10:34:16 [notice] 1#1: start worker processes
+2023/03/29 10:34:16 [notice] 1#1: start worker process 20
+2023/03/29 10:34:16 [notice] 1#1: start worker process 21
+2023/03/29 10:34:16 [notice] 1#1: start worker process 22
+2023/03/29 10:34:16 [notice] 1#1: start worker process 23
+2023/03/29 10:34:16 [notice] 1#1: start worker process 24
+2023/03/29 10:34:16 [notice] 1#1: start worker process 25
+2023/03/29 10:34:16 [notice] 1#1: start worker process 26
+2023/03/29 10:34:16 [notice] 1#1: start worker process 27
+2023/03/29 10:34:16 [notice] 1#1: start worker process 28
+2023/03/29 10:34:16 [notice] 1#1: start worker process 29
+2023/03/29 10:34:16 [notice] 1#1: start worker process 30
+2023/03/29 10:34:16 [notice] 1#1: start worker process 31
+2023/03/29 10:34:16 [notice] 1#1: start worker process 32
+2023/03/29 10:34:16 [notice] 1#1: start worker process 33
+2023/03/29 10:34:16 [notice] 1#1: start worker process 34
+2023/03/29 10:34:16 [notice] 1#1: start worker process 35
+2023/04/13 12:37:58 [notice] 1#1: using the "epoll" event method
+2023/04/13 12:37:58 [notice] 1#1: nginx/1.23.3
+2023/04/13 12:37:58 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/04/13 12:37:58 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/04/13 12:37:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/04/13 12:37:58 [notice] 1#1: start worker processes
+2023/04/13 12:37:58 [notice] 1#1: start worker process 20
+2023/04/13 12:37:58 [notice] 1#1: start worker process 21
+2023/04/13 12:37:58 [notice] 1#1: start worker process 22
+2023/04/13 12:37:58 [notice] 1#1: start worker process 23
+2023/04/13 12:37:58 [notice] 1#1: start worker process 24
+2023/04/13 12:37:58 [notice] 1#1: start worker process 25
+2023/04/13 12:37:58 [notice] 1#1: start worker process 26
+2023/04/13 12:37:58 [notice] 1#1: start worker process 27
+2023/04/13 12:37:58 [notice] 1#1: start worker process 28
+2023/04/13 12:37:58 [notice] 1#1: start worker process 29
+2023/04/13 12:37:58 [notice] 1#1: start worker process 30
+2023/04/13 12:37:58 [notice] 1#1: start worker process 31
+2023/04/13 12:37:58 [notice] 1#1: start worker process 32
+2023/04/13 12:37:58 [notice] 1#1: start worker process 33
+2023/04/13 12:37:58 [notice] 1#1: start worker process 34
+2023/04/13 12:37:58 [notice] 1#1: start worker process 35
+2023/04/13 12:57:25 [warn] 20#20: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 12:57:25 [warn] 22#22: *13 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 12:57:26 [warn] 20#20: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 12:57:34 [warn] 22#22: *13 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 12:57:34 [warn] 20#20: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 13:32:29 [warn] 28#28: *39 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/00/0000000006 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 13:32:29 [warn] 30#30: *46 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/00/0000000007 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 13:45:26 [warn] 33#33: *54 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/00/0000000008 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 13:45:26 [warn] 33#33: *54 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/00/0000000009 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:03:56 [warn] 21#21: *64 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/01/0000000010 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:03:57 [warn] 21#21: *64 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/01/0000000011 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:04:16 [warn] 20#20: *69 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/01/0000000012 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:04:16 [warn] 21#21: *64 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/01/0000000013 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:04:17 [warn] 21#21: *79 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/01/0000000014 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:04:17 [warn] 21#21: *77 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/01/0000000015 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:04:17 [warn] 21#21: *79 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/01/0000000016 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:07:43 [warn] 21#21: *87 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/01/0000000017 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:07:43 [warn] 20#20: *90 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/01/0000000018 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/13 18:07:44 [warn] 21#21: *93 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/01/0000000019 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 05:44:22 [warn] 21#21: *96 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/02/0000000020 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 05:44:22 [warn] 21#21: *97 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/02/0000000021 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:25:22 [warn] 21#21: *108 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/02/0000000022 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:25:22 [warn] 21#21: *108 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/02/0000000023 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:25:49 [warn] 21#21: *116 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/02/0000000024 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:25:49 [warn] 21#21: *108 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/02/0000000025 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:06 [warn] 21#21: *108 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/02/0000000026 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:06 [warn] 21#21: *129 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/02/0000000027 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:24 [warn] 21#21: *108 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/02/0000000028 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:25 [warn] 21#21: *129 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/02/0000000029 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:25 [warn] 21#21: *137 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/03/0000000030 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:25 [warn] 20#20: *139 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/03/0000000031 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:26 [warn] 21#21: *141 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/03/0000000032 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:26:27 [warn] 21#21: *146 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/03/0000000033 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:34:27 [warn] 21#21: *149 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/03/0000000034 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:34:27 [warn] 20#20: *151 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/03/0000000035 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:34:27 [warn] 22#22: *154 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/03/0000000036 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:21 [warn] 21#21: *149 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/03/0000000037 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:21 [warn] 22#22: *154 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/03/0000000038 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:22 [warn] 20#20: *163 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/03/0000000039 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:23 [warn] 20#20: *161 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/04/0000000040 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:24 [warn] 20#20: *167 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/04/0000000041 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:35:24 [warn] 20#20: *172 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/04/0000000042 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:31 [warn] 20#20: *177 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/04/0000000043 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:31 [warn] 20#20: *175 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/04/0000000044 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:33 [warn] 20#20: *175 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/04/0000000045 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:34 [warn] 20#20: *186 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/04/0000000046 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:38 [warn] 20#20: *175 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/04/0000000047 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/14 08:36:38 [warn] 20#20: *186 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/04/0000000048 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/15 06:03:15 [warn] 20#20: *203 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/04/0000000049 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/15 20:19:56 [warn] 22#22: *219 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/05/0000000050 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/current_user/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/current_user/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/15 20:20:05 [warn] 22#22: *219 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/05/0000000051 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/15 20:20:05 [warn] 22#22: *221 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/05/0000000052 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/15 20:20:05 [warn] 23#23: *234 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/05/0000000053 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:22 [warn] 22#22: *237 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/05/0000000054 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:22 [warn] 22#22: *239 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/05/0000000055 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:22 [warn] 22#22: *237 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/05/0000000056 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:24 [warn] 22#22: *237 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/05/0000000057 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:25 [warn] 23#23: *244 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/05/0000000058 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 10:35:25 [warn] 22#22: *251 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/05/0000000059 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:10 [warn] 22#22: *254 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/06/0000000060 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:10 [warn] 22#22: *254 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/06/0000000061 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:12 [warn] 22#22: *262 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/06/0000000062 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:12 [warn] 23#23: *266 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/06/0000000063 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:12 [warn] 22#22: *269 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/06/0000000064 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:51 [warn] 22#22: *269 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/06/0000000065 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:51 [warn] 22#22: *275 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/06/0000000066 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:55 [warn] 22#22: *275 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/06/0000000067 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:11:55 [warn] 22#22: *281 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/06/0000000068 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:18:07 [warn] 23#23: *284 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/06/0000000069 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 11:18:08 [warn] 23#23: *289 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/07/0000000070 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 20:54:56 [warn] 23#23: *298 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/07/0000000071 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 20:54:57 [warn] 23#23: *300 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/07/0000000072 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 20:54:58 [warn] 23#23: *298 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/07/0000000073 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 20:54:59 [warn] 23#23: *298 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/07/0000000074 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:17:21 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/07/0000000075 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:17:21 [warn] 23#23: *321 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/07/0000000076 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:18:36 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/07/0000000077 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:18:36 [warn] 23#23: *321 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/07/0000000078 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:32 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/07/0000000079 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:32 [warn] 23#23: *339 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/08/0000000080 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:38 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/08/0000000081 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:38 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/08/0000000082 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:43 [warn] 23#23: *316 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/08/0000000083 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 22:19:44 [warn] 23#23: *353 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/08/0000000084 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 23:47:31 [warn] 24#24: *358 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/08/0000000085 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/16 23:47:31 [warn] 24#24: *358 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/08/0000000086 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:06:12 [warn] 24#24: *367 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/08/0000000087 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:06:12 [warn] 25#25: *369 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/08/0000000088 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:06:12 [warn] 24#24: *372 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/08/0000000089 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:07:22 [warn] 24#24: *375 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/09/0000000090 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:07:23 [warn] 24#24: *380 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/09/0000000091 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:10:53 [warn] 24#24: *383 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/09/0000000092 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:10:53 [warn] 25#25: *385 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/09/0000000093 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:11:15 [warn] 24#24: *383 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/09/0000000094 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:11:15 [warn] 24#24: *398 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/09/0000000095 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:11:36 [warn] 24#24: *398 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/09/0000000096 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:11:37 [warn] 24#24: *404 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/09/0000000097 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:18:45 [warn] 24#24: *409 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/09/0000000098 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:18:45 [warn] 24#24: *407 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/09/0000000099 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:22:11 [warn] 25#25: *416 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/10/0000000100 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:22:16 [warn] 25#25: *420 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/10/0000000101 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:22:28 [warn] 25#25: *423 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/10/0000000102 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:23:21 [warn] 25#25: *426 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/10/0000000103 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:23:33 [warn] 25#25: *429 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/10/0000000104 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:25:17 [warn] 25#25: *432 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/10/0000000105 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:26:08 [warn] 26#26: *435 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/10/0000000106 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:26:14 [warn] 26#26: *438 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/10/0000000107 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:27:44 [warn] 26#26: *441 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/10/0000000108 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:27:52 [warn] 26#26: *443 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/10/0000000109 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:27:53 [warn] 26#26: *448 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/11/0000000110 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:28:07 [warn] 26#26: *448 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/11/0000000111 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:28:07 [warn] 26#26: *454 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/11/0000000112 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 00:28:49 [warn] 26#26: *458 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/11/0000000113 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:29:39 [warn] 26#26: *461 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/11/0000000114 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:33:54 [warn] 26#26: *464 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/11/0000000115 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:34:12 [warn] 26#26: *467 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/11/0000000116 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:34:27 [warn] 27#27: *470 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/11/0000000117 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost"
+2023/04/17 00:36:56 [warn] 27#27: *473 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/8/11/0000000118 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/?page=1 HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/?page=1", host: "localhost"
+2023/04/17 00:37:35 [warn] 27#27: *476 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/9/11/0000000119 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/?page=1&per_page=12 HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/?page=1&per_page=12", host: "localhost"
+2023/04/17 00:40:03 [warn] 27#27: *479 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/0/12/0000000120 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/?page=1&per_page=12 HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/?page=1&per_page=12", host: "localhost"
+2023/04/17 00:41:50 [warn] 27#27: *482 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/12/0000000121 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/?num_pages=1&per_page=12 HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/?num_pages=1&per_page=12", host: "localhost"
+2023/04/17 00:44:14 [warn] 27#27: *485 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/12/0000000122 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/?num_pages=1&per_page=12 HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/?num_pages=1&per_page=12", host: "localhost"
+2023/04/17 00:44:33 [warn] 27#27: *487 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/12/0000000123 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 06:46:17 [warn] 27#27: *493 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/12/0000000124 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 22:07:41 [warn] 29#29: *504 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/12/0000000125 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 22:07:41 [warn] 28#28: *502 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/6/12/0000000126 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 22:08:23 [warn] 28#28: *502 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/7/12/0000000127 while reading upstream, client: 172.19.0.1, server: deepia-api.xyz, request: "GET /api/content/ HTTP/1.1", upstream: "http://172.19.0.3:8000/api/content/", host: "localhost", referrer: "http://localhost:3000/"
+2023/04/17 23:42:42 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/04/17 23:42:42 [notice] 20#20: gracefully shutting down
+2023/04/17 23:42:42 [notice] 20#20: exiting
+2023/04/17 23:42:42 [notice] 21#21: gracefully shutting down
+2023/04/17 23:42:42 [notice] 22#22: gracefully shutting down
+2023/04/17 23:42:42 [notice] 23#23: gracefully shutting down
+2023/04/17 23:42:42 [notice] 21#21: exiting
+2023/04/17 23:42:42 [notice] 20#20: exit
+2023/04/17 23:42:42 [notice] 24#24: gracefully shutting down
+2023/04/17 23:42:42 [notice] 22#22: exiting
+2023/04/17 23:42:42 [notice] 23#23: exiting
+2023/04/17 23:42:42 [notice] 25#25: gracefully shutting down
+2023/04/17 23:42:42 [notice] 24#24: exiting
+2023/04/17 23:42:42 [notice] 21#21: exit
+2023/04/17 23:42:42 [notice] 26#26: gracefully shutting down
+2023/04/17 23:42:42 [notice] 22#22: exit
+2023/04/17 23:42:42 [notice] 23#23: exit
+2023/04/17 23:42:42 [notice] 25#25: exiting
+2023/04/17 23:42:42 [notice] 27#27: gracefully shutting down
+2023/04/17 23:42:42 [notice] 24#24: exit
+2023/04/17 23:42:42 [notice] 26#26: exiting
+2023/04/17 23:42:42 [notice] 28#28: gracefully shutting down
+2023/04/17 23:42:42 [notice] 27#27: exiting
+2023/04/17 23:42:42 [notice] 29#29: gracefully shutting down
+2023/04/17 23:42:42 [notice] 25#25: exit
+2023/04/17 23:42:42 [notice] 28#28: exiting
+2023/04/17 23:42:42 [notice] 26#26: exit
+2023/04/17 23:42:42 [notice] 30#30: gracefully shutting down
+2023/04/17 23:42:42 [notice] 29#29: exiting
+2023/04/17 23:42:42 [notice] 27#27: exit
+2023/04/17 23:42:42 [notice] 31#31: gracefully shutting down
+2023/04/17 23:42:42 [notice] 30#30: exiting
+2023/04/17 23:42:42 [notice] 28#28: exit
+2023/04/17 23:42:42 [notice] 33#33: gracefully shutting down
+2023/04/17 23:42:42 [notice] 32#32: gracefully shutting down
+2023/04/17 23:42:42 [notice] 31#31: exiting
+2023/04/17 23:42:42 [notice] 29#29: exit
+2023/04/17 23:42:42 [notice] 33#33: exiting
+2023/04/17 23:42:42 [notice] 30#30: exit
+2023/04/17 23:42:42 [notice] 32#32: exiting
+2023/04/17 23:42:42 [notice] 31#31: exit
+2023/04/17 23:42:42 [notice] 33#33: exit
+2023/04/17 23:42:42 [notice] 32#32: exit
+2023/04/17 23:42:42 [notice] 34#34: gracefully shutting down
+2023/04/17 23:42:42 [notice] 34#34: exiting
+2023/04/17 23:42:42 [notice] 34#34: exit
+2023/04/17 23:42:42 [notice] 35#35: gracefully shutting down
+2023/04/17 23:42:42 [notice] 35#35: exiting
+2023/04/17 23:42:42 [notice] 35#35: exit
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/04/17 23:42:43 [notice] 1#1: worker process 28 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 21 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 24 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 29 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 33 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 34 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2023/04/17 23:42:43 [notice] 1#1: worker process 20 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 23 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 26 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 32 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2023/04/17 23:42:43 [notice] 1#1: worker process 22 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 30 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/04/17 23:42:43 [notice] 1#1: worker process 35 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/04/17 23:42:43 [notice] 1#1: worker process 27 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: worker process 25 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: signal 29 (SIGIO) received
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2023/04/17 23:42:43 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/04/17 23:42:43 [notice] 1#1: worker process 31 exited with code 0
+2023/04/17 23:42:43 [notice] 1#1: exit

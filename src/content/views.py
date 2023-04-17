@@ -15,6 +15,9 @@ from api.gpt import exec_gpt
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import io
 from user.models import User
+from user.serializers import UserSerializerForContentList
+from rest_framework.pagination import PageNumberPagination
+
 
 def null_check(number):
     if number == None:
@@ -30,19 +33,23 @@ def has_duplicates(seq):
 def content_list(request):
     if request.method == 'GET':
         contents = Content.objects.order_by('-created_at')
-        serializer = ContentSerializer(contents, many=True)
+        paginator = PageNumberPagination()
+        paginated_contents = paginator.paginate_queryset(contents, request)
+        serializer = ContentSerializer(paginated_contents, many=True)
+        user_ids = [content.user_id for content in contents]
+        users = User.objects.filter(id__in=user_ids)
+        user_serializer = UserSerializerForContentList(users, many=True)
+        for content in serializer.data:
+            content_user_id = content['user']
+            content['user'] = user_serializer.data[user_ids.index(content_user_id)]
         response = Response(serializer.data)
         return response
+    
 
     if request.method == 'POST':
         text = request.data["title"]
         category_id = request.data['category_id']
         deliverables = ''
-        print(category_id)
-        print(category_id)
-        print(category_id)
-        print(category_id)
-        print(category_id)
         if category_id == 0:
             deliverables = exec_stable_diffusion(text)
         elif category_id == 1:
