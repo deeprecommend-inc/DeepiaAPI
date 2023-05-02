@@ -32,7 +32,11 @@ def has_duplicates(seq):
 @permission_classes([IsAuthenticated, ])
 def content_list(request):
     if request.method == 'GET':
-        contents = Content.objects.order_by('-created_at')
+        category_id = request.GET.get('category_id')
+        if category_id == None:
+            contents = Content.objects.order_by('-created_at')
+        else:
+            contents = Content.objects.filter(category_id=category_id).order_by('-created_at')
         paginator = PageNumberPagination()
         paginated_contents = paginator.paginate_queryset(contents, request)
         serializer = ContentSerializer(paginated_contents, many=True)
@@ -44,7 +48,6 @@ def content_list(request):
             content['user'] = user_serializer.data[user_ids.index(content_user_id)]
         response = Response(serializer.data)
         return response
-    
 
     if request.method == 'POST':
         text = request.data["title"]
