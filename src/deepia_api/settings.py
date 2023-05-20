@@ -92,7 +92,7 @@ CORS_ALLOW_METHODS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'localhost:3000',
+    'http://localhost:3000',
     'https://deepia.net',
     'https://www.deepia.net',
 ]
@@ -104,6 +104,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = False
 
 SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_AGE = None
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
 CSRF_COOKIE_SECURE = True
 

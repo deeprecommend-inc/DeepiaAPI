@@ -124,4 +124,3 @@ $ python3 manage.py startapp <MODEL NAME>
 
 # DeepiaApi
 
-# DeepAiApi

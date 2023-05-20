@@ -44,8 +44,11 @@ def content_list(request):
         users = User.objects.filter(id__in=user_ids)
         user_serializer = UserSerializerForContentList(users, many=True)
         for content in serializer.data:
-            content_user_id = content['user']
-            content['user'] = user_serializer.data[user_ids.index(content_user_id)]
+            user_id = content['user']
+            index = user_ids.index(user_id)
+            if index < len(user_serializer.data):
+                new_user = user_serializer.data[index]
+                content['user'] = new_user
         response = Response(serializer.data)
         return response
 
@@ -81,8 +84,20 @@ def content_list(request):
 @permission_classes([IsAuthenticated, ])
 def user_content_list(request):
     if request.method == 'GET':
-        contents = Content.objects.filter(user_id=request.user.id).order_by('-created_at')
-        serializer = ContentSerializer(contents, many=True)
+        category_id = request.GET.get('category_id')
+        if category_id == None:
+            contents = Content.objects.filter(user_id=request.user.id).order_by('-created_at')
+        else:
+            contents = Content.objects.filter(category_id=category_id).order_by('-created_at')
+        paginator = PageNumberPagination()
+        paginated_contents = paginator.paginate_queryset(contents, request)
+        serializer = ContentSerializer(paginated_contents, many=True)
+        user_ids = [content.user_id for content in contents]
+        users = User.objects.filter(id__in=user_ids)
+        user_serializer = UserSerializerForContentList(users, many=True)
+        for content in serializer.data:
+            content_user_id = content['user']
+            content['user'] = user_serializer.data[user_ids.index(content_user_id)]
         response = Response(serializer.data)
         return response
 
@@ -100,7 +115,7 @@ def content_detail(request, pk):
         serializer = ContentSerializer(content)
         return Response(serializer.data)
 
-    # TODO: 要望次第
+    # TODO: 要望次第で更新可能にする
     # if request.method == 'PUT':
     #     new_content = {
     #         "title": request.data['title'],
