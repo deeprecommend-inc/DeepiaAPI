@@ -53,19 +53,17 @@ def content_list(request):
         return response
 
     if request.method == 'POST':
-        text = request.data["title"]
+        prompt = request.data["prompt"]
         category_id = request.data['category_id']
         deliverables = ''
         if category_id == 0:
-            deliverables = exec_stable_diffusion(text)
+            deliverables = exec_stable_diffusion(prompt)
         elif category_id == 1:
-            deliverables = exec_stable_diffusion(text)
-        elif category_id == 2:
-            deliverables = exec_gpt(text)
+            deliverables = exec_gpt(prompt)
         else:
             return
         new_content = {
-            "title": text,
+            "prompt": prompt,
             "deliverables": deliverables,
             "category_id": category_id,
             "user": request.user.id,
@@ -118,7 +116,7 @@ def content_detail(request, pk):
     # TODO: 要望次第で更新可能にする
     # if request.method == 'PUT':
     #     new_content = {
-    #         "title": request.data['title'],
+    #         "prompt": request.data['prompt'],
     #         "user_id": request.user.id,
     #     }
     #     serializer = ContentSerializer(content, data=new_content)

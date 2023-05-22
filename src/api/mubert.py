@@ -87,7 +87,7 @@ def exec_mubert(text):
     pat = rdata['data']['pat']
     print(f'Got token: {pat}')
     
-    # @title **Generate some music 🎵**
+    # @prompt **Generate some music 🎵**
     
     prompt = PROMPT  # @param {type:"string"}
     duration = 30  # @param {type:"number"}
