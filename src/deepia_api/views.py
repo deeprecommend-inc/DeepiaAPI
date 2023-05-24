@@ -16,8 +16,11 @@ from django.contrib.auth.hashers import check_password
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
 def current_user(request):
-    user = User.objects.get(id=request.user.id)
-    serializer = UserSerializer(user)
+    try:
+        user = User.objects.get(id=request.user.id)
+        serializer = UserSerializer(user)
+    except User.DoesNotExist:
+        return Response(None)
     return Response(serializer.data)
 
 

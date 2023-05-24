@@ -10,5 +10,4 @@ def exec_gpt(prompt):
         stop=None,
         temperature=0.5,
     )
-    print(response)
     return response.choices[0].text

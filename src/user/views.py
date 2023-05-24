@@ -57,3 +57,28 @@ def user_detail(request, pk):
 def is_unique_email(request):
     is_unique_email = User.objects.filter(email=request.data['email']).exists()
     return Response(not is_unique_email)
+
+
+@api_view(['PUT'])
+@authentication_classes([JWTAuthentication])
+@permission_classes([IsAuthenticated])
+def user_purple_update(request, pk):
+    try:
+        user = User.objects.get(pk=pk)
+    except User.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+    if request.method == 'PUT':
+        user.purple = True
+        user.save()
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+    
+    if request.method == 'DELETE':
+        user.purple = False
+        user.save()
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+    
+    return Response(status=status.HTTP_400_BAD_REQUEST)
+

@@ -93,8 +93,8 @@ CORS_ALLOW_METHODS = [
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    'https://deepia.net',
-    'https://www.deepia.net',
+    'https://deepia.space',
+    'https://www.deepia.space',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
