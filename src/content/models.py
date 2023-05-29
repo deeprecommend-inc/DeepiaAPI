@@ -7,7 +7,7 @@ class Content(models.Model):
     deliverables = models.TextField(blank=True, null=True)
     category_id = models.IntegerField(default=0, blank=False, null=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    like = models.ManyToManyField(User, related_name='related_content', blank=True)
+    #like = models.ManyToManyField(User, related_name='related_content', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

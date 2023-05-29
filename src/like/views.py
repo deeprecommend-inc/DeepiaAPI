@@ -18,5 +18,5 @@ def like_list(request):
 @api_view(['GET'])
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
-def like_list(request):
+def like_detail(request):
     return

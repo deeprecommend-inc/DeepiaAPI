@@ -21,13 +21,16 @@ from rest_framework.pagination import PageNumberPagination
 from django.db.models import Q
 from const.content_cateogry import ContentCategory
 
+
 def null_check(number):
     if number == None:
       return False
     return True
 
+
 def has_duplicates(seq):
     return len(seq) != len(set(seq))
+
 
 @api_view(['GET'])
 def content_list(request):
@@ -36,11 +39,11 @@ def content_list(request):
     if not search_word and not category_id:
         contents = Content.objects.all()
     elif not category_id:
-        contents = Content.objects.filter(Q(title__icontains=search_word) | Q(description__icontains=search_word)).all()
+        contents = Content.objects.filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word)).all()
     elif not search_word:
         contents = Content.objects.filter(category_id=category_id).all()
     else:
-        contents = Content.objects.filter(category_id=category_id).filter(Q(title__icontains=search_word) | Q(description__icontains=search_word)).all()
+        contents = Content.objects.filter(category_id=category_id).filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word)).all()
     paginator = PageNumberPagination()
     paginated_contents = paginator.paginate_queryset(contents, request)
     serializer = ContentSerializer(paginated_contents, many=True)
@@ -61,24 +64,24 @@ def content_list(request):
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
 def content_create(request):
-    prompt = request.data["prompt"]
-    category_id = request.data['category_id']
+    prompt = request.data.get("prompt")
+    category_id = request.data.get('category_id')
     deliverables = ''
-    if category_id == ContentCategory.IMAGE:
+    if category_id == ContentCategory.IMAGE.value:
         deliverables = exec_stable_diffusion(prompt)
-    elif category_id == ContentCategory.TEXT:
+    elif category_id == ContentCategory.TEXT.value:
         deliverables = exec_gpt(prompt)
-    elif category_id == ContentCategory.MUSIC:
-    # TODO: Text-To-Music API
-        return
-    elif category_id == ContentCategory.VIDEO:
+    elif category_id == ContentCategory.MUSIC.value:
+        # TODO: Text-To-Music API
+        deliverables = ''
+    elif category_id == ContentCategory.VIDEO.value:
         # TODO: Text-To-Video API
-        return
-    elif category_id == ContentCategory.SPACE:
+        deliverables = ''
+    elif category_id == ContentCategory.SPACE.value:
         # TODO: Text-To-Space API
-        return
+        deliverables = ''
     else:
-        return
+        deliverables = ''
     new_content = {
         "prompt": prompt,
         "deliverables": deliverables,
@@ -98,23 +101,21 @@ def content_create(request):
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
 def user_content_list(request):
-    if request.method == 'GET':
-        category_id = request.GET.get('category_id')
-        if category_id == None:
-            contents = Content.objects.filter(user_id=request.user.id).order_by('-created_at')
-        else:
-            contents = Content.objects.filter(user_id=request.user.id, category_id=category_id).order_by('-created_at')
-        paginator = PageNumberPagination()
-        paginated_contents = paginator.paginate_queryset(contents, request)
-        serializer = ContentSerializer(paginated_contents, many=True)
-        user_ids = [content.user_id for content in contents]
-        users = User.objects.filter(id__in=user_ids)
-        user_serializer = UserSerializerForContentList(users, many=True)
-        for content in serializer.data:
-            content_user_id = content['user']
-            content['user'] = user_serializer.data[user_ids.index(content_user_id)]
-        response = Response(serializer.data)
-        return response
+    contents = Content.objects.filter(user_id=request.user.id).all()
+    paginator = PageNumberPagination()
+    paginated_contents = paginator.paginate_queryset(contents, request)
+    serializer = ContentSerializer(paginated_contents, many=True)
+    user_ids = [content.user_id for content in contents]
+    users = User.objects.filter(id__in=user_ids)
+    user_serializer = UserSerializerForContentList(users, many=True)
+    for content in serializer.data:
+        user_id = content['user']
+        index = user_ids.index(user_id)
+        if index < len(user_serializer.data):
+            new_user = user_serializer.data[index]
+            content['user'] = new_user
+    response = Response(serializer.data)
+    return response
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
