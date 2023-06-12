@@ -27,3 +27,5 @@ openai
 # scikit-learn
 # matplotlib
 # seaborn
+# python-dotenv
+# pyautogui

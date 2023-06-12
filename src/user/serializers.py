@@ -12,3 +12,7 @@ class UserSerializerForContentList(serializers.ModelSerializer):
         model = User
         fields = ('id', 'name', 'image')
 
+class UserSerializerForAdminApi(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'name', 'username', 'purple', 'email')

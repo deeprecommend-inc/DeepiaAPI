@@ -34,7 +34,7 @@ class CustomCorsMiddleware(MiddlewareMixin):
     def process_response(self, request, response):
         response['Access-Control-Allow-Origin'] = ','.join([
             'http://localhost:3000',
-            'https://deepia.spaces.google.com',
+            'https://deepia.spaces',
             'https://www.deepia.space',
         ])
         response['Content-Type'] = 'application/json'

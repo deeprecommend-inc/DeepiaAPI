@@ -1,40 +1,48 @@
-# https://github.com/Stability-AI/stability-sdk
-import getpass
-import io
-import os
-import warnings
-from IPython.display import display
-from PIL import Image
-from stability_sdk import client
-import stability_sdk.interfaces.gooseai.generation.generation_pb2 as generation
-import base64
-from django.core.files.base import ContentFile
-from django.core.files import File
+# https://medium.com/@neonforge/how-to-automate-midjourney-image-generation-with-python-and-gui-automation-ac9ca5f747ae
+import time
+import discord
+from discord.ext import commands
+from dotenv import load_dotenv
+import pyautogui as pg
 
-os.environ['STABILITY_HOST'] = 'grpc.stability.ai:443'
-# os.environ['STABILITY_KEY'] = getpass.getpass('sk-U4a6gTN1tDFtNxcLlcufCBDvIqlebCOJJG0uvyDhVdrPAg2K')
+
+discord_token = "YOUR_DISCORD_TOKEN"
+load_dotenv()
+client = commands.Bot(command_prefix="*", intents=discord.Intents.all())
+
 
 def exec_midjourney(text):
-    stability_api = client.StabilityInference(
-        key='sk-U4a6gTN1tDFtNxcLlcufCBDvIqlebCOJJG0uvyDhVdrPAg2K',
-        verbose=True,
-    )
-    
-    # the object returned is a python generator
-    answers = stability_api.generate(
-        prompt=text,
-        seed=34567, # if provided, specifying a random seed makes results deterministic
-        steps=20, # defaults to 30 if not specified
-    )
+    prompt_counter = 0
 
-    # iterating over the generator produces the api response
-    for resp in answers:
-        for artifact in resp.artifacts:
-            if artifact.finish_reason == generation.FILTER:
-                warnings.warn(
-                    "Your request activated the API's safety filters and could not be processed."
-                    "Please modify the prompt and try again.")
-            if artifact.type == generation.ARTIFACT_IMAGE:
-                # img = Image.open(io.BytesIO(artifact.binary))
-                img_data = base64.b64encode(artifact.binary).decode('utf-8')
-                return img_data
+    msg = text.content
+    print(text)
+
+    while prompt_counter < len(prompts):
+        # Start Automation by typing "automation" in the discord channel
+        if msg == 'automation':
+            time.sleep(3)
+            pg.press('tab')
+            for i in range(1):
+                time.sleep(3)
+                pg.write('/imagine')
+                time.sleep(5)
+                pg.press('tab')
+                pg.write(text)
+                time.sleep(3)
+                pg.press('enter')
+                time.sleep(5)
+                prompt_counter += 1
+
+        # continue Automation as soon Midjourney bot sends a message with attachment.
+        for attachment in message.attachments:
+            time.sleep(3)
+            pg.write('/imagine')
+            time.sleep(5)
+            pg.press('tab')
+            pg.write(prompts[prompt_counter])
+            time.sleep(3)
+            pg.press('enter')
+            time.sleep(5)
+            prompt_counter += 1
+    
+    return attachment
