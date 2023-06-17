@@ -1,13 +1,12 @@
+# https://dev.classmethod.jp/articles/openai-api-gpt-update-ver-0613/
 import openai
 
 def exec_gpt(prompt):
-    openai.api_key = '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'
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.5,
+    openai.api_key = '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'
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "user", "content": prompt},
+        ],
     )
-    return response.choices[0].text
+    return response.choices[0].message.content.strip()

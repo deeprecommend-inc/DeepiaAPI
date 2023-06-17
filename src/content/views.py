@@ -20,7 +20,7 @@ from user.serializers import UserSerializerForContentList
 from rest_framework.pagination import PageNumberPagination
 from django.db.models import Q
 from const.content_cateogry import ContentCategory
-
+from const.sample_datauri import sample_datauri
 
 def null_check(number):
     if number == None:
@@ -44,9 +44,9 @@ def content_list(request):
         contents = Content.objects.filter(category_id=category_id).all()
     else:
         contents = Content.objects.filter(category_id=category_id).filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word)).all()
-    paginator = PageNumberPagination()
-    paginated_contents = paginator.paginate_queryset(contents, request)
-    serializer = ContentSerializer(paginated_contents, many=True)
+    # paginator = PageNumberPagination()
+    # paginated_contents = paginator.paginate_queryset(contents, request)
+    serializer = ContentSerializer(contents, many=True)
     user_ids = [content.user_id for content in contents]
     users = User.objects.filter(id__in=user_ids)
     user_serializer = UserSerializerForContentList(users, many=True)
@@ -69,6 +69,7 @@ def content_create(request):
     deliverables = ''
     if category_id == ContentCategory.IMAGE.value:
         deliverables = exec_stable_diffusion(prompt)
+        # deliverables = sample_datauri
     elif category_id == ContentCategory.TEXT.value:
         deliverables = exec_gpt(prompt)
     elif category_id == ContentCategory.MUSIC.value:

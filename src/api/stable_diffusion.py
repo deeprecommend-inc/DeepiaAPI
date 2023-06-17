@@ -14,15 +14,15 @@ from django.core.files import File
 os.environ['STABILITY_HOST'] = 'grpc.stability.ai:443'
 # os.environ['STABILITY_KEY'] = getpass.getpass('sk-U4a6gTN1tDFtNxcLlcufCBDvIqlebCOJJG0uvyDhVdrPAg2K')
 
-def exec_stable_diffusion(text):
+def exec_stable_diffusion(prompt):
     stability_api = client.StabilityInference(
-        key='sk-U4a6gTN1tDFtNxcLlcufCBDvIqlebCOJJG0uvyDhVdrPAg2K',
+        key='sk-ZGdObPPTNdzGIBlEsAULAWNkNS9w4OroU1vHfnyARiqC8vxk',
         verbose=True,
     )
     
     # the object returned is a python generator
     answers = stability_api.generate(
-        prompt=text,
+        prompt=prompt,
         seed=34567, # if provided, specifying a random seed makes results deterministic
         steps=20, # defaults to 30 if not specified
     )
