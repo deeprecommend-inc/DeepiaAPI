@@ -8,6 +8,8 @@ WORKDIR /code
 
 ADD requirements.txt /code/
 
+RUN pip3 cache purge
+
 RUN pip3 install --upgrade pip
 
 RUN pip3 install -r requirements.txt
