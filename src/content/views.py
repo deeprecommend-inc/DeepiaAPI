@@ -52,10 +52,11 @@ def content_list(request):
     user_serializer = UserSerializerForContentList(users, many=True)
     for content in serializer.data:
         user_id = content['user']
-        index = user_ids.index(user_id)
-        if index < len(user_serializer.data):
-            new_user = user_serializer.data[index]
-            content['user'] = new_user
+        if user_id in user_ids:
+            index = user_ids.index(user_id)
+            if index < len(user_serializer.data):
+                new_user = user_serializer.data[index]
+                content['user'] = new_user
     response = Response(serializer.data)
     return response
 
