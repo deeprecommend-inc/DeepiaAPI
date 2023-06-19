@@ -47,16 +47,11 @@ def content_list(request):
     # paginator = PageNumberPagination()
     # paginated_contents = paginator.paginate_queryset(contents, request)
     serializer = ContentSerializer(contents, many=True)
-    user_ids = [content.user_id for content in contents]
-    users = User.objects.filter(id__in=user_ids)
-    user_serializer = UserSerializerForContentList(users, many=True)
-    for content in serializer.data:
+    for i, content in enumerate(serializer.data):
         user_id = content['user']
-        if user_id in user_ids:
-            index = user_ids.index(user_id)
-            if index < len(user_serializer.data):
-                new_user = user_serializer.data[index]
-                content['user'] = new_user
+        user = User.objects.get(id=user_id)
+        new_user = UserSerializerForContentList(user)
+        content['user'] = new_user.data
     response = Response(serializer.data)
     return response
 
