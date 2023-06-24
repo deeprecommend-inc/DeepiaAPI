@@ -66,12 +66,18 @@ esac
 if [ $staging != "0" ]; then staging_arg="--staging"; fi
 
 docker-compose -f docker-compose.prod.yml run --rm --entrypoint "\
-  certbot certonly --webroot -w /var/www/certbot -d deepia.tokyo \
+  certbot certonly --cert-name deepia.tokyo --webroot -w /var/www/certbot -d deepia.tokyo \
     $staging_arg \
     $email_arg \
     --rsa-key-size $rsa_key_size \
     --agree-tos \
     --force-renewal" deepia-ssl-certificate
+  # certbot certonly --webroot -w /var/www/certbot -d deepia.tokyo \
+  #   $staging_arg \
+  #   $email_arg \
+  #   --rsa-key-size $rsa_key_size \
+  #   --agree-tos \
+  #   --force-renewal" deepia-ssl-certificate
 echo
 
 echo "### Reloading nginx ..."
