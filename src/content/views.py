@@ -78,6 +78,7 @@ def content_create(request):
         # TODO: Text-To-Space API
         deliverables = ''
     else:
+        category_id = ContentCategory.IMAGE.value
         deliverables = ''
     new_content = {
         "prompt": prompt,
