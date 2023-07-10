@@ -5,17 +5,14 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import pyautogui as pg
 
-
 discord_token = "YOUR_DISCORD_TOKEN"
 load_dotenv()
 client = commands.Bot(command_prefix="*", intents=discord.Intents.all())
 
-
-def exec_midjourney(text):
+def exec_midjourney(prompt):
     prompt_counter = 0
 
-    msg = text.content
-    print(text)
+    msg = prompt.content
 
     while prompt_counter < len(prompts):
         # Start Automation by typing "automation" in the discord channel
@@ -27,7 +24,7 @@ def exec_midjourney(text):
                 pg.write('/imagine')
                 time.sleep(5)
                 pg.press('tab')
-                pg.write(text)
+                pg.write(prompt)
                 time.sleep(3)
                 pg.press('enter')
                 time.sleep(5)
