@@ -1,6 +1,8 @@
 from unicodedata import category
 from django.http.response import JsonResponse
 from api.gpt import exec_gpt
+from api.gpt4 import exec_gpt4
+from api.deepl import exec_deepl
 from deepia_api.auth import JWTAuthentication
 from content.models import Content
 from content.serializers import ContentSerializer
@@ -12,7 +14,6 @@ from django.shortcuts import get_object_or_404
 from PIL import Image
 import os
 from api.stable_diffusion import exec_stable_diffusion
-from api.gpt import exec_gpt
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import io
 from user.models import User
@@ -36,22 +37,29 @@ def has_duplicates(seq):
 def content_list(request):
     search_word = request.GET.get('search_word')
     category_id = request.GET.get('category_id')
-    if not search_word and not category_id:
-        contents = Content.objects.all()
-    elif not category_id:
-        contents = Content.objects.filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word)).all()
-    elif not search_word:
-        contents = Content.objects.filter(category_id=category_id).all()
-    else:
-        contents = Content.objects.filter(category_id=category_id).filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word)).all()
-    # paginator = PageNumberPagination()
-    # paginated_contents = paginator.paginate_queryset(contents, request)
+    contents_query = Content.objects.all()
+
+    # Filtering
+    if search_word and category_id:
+        contents_query = contents_query.filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word), category_id=category_id)
+    elif search_word:
+        contents_query = contents_query.filter(Q(prompt__icontains=search_word) | Q(deliverables__icontains=search_word))
+    elif category_id:
+        contents_query = contents_query.filter(category_id=category_id)
+
+    # Prefetching related User objects to optimize queries
+    contents = contents_query.prefetch_related('user').all()
+
     serializer = ContentSerializer(contents, many=True)
-    for i, content in enumerate(serializer.data):
+    
+    # Map users to their IDs for faster access
+    users = {user.id: user for user in User.objects.filter(id__in=[content['user'] for content in serializer.data])}
+    
+    for content in serializer.data:
         user_id = content['user']
-        user = User.objects.get(id=user_id)
-        new_user = UserSerializerForContentList(user)
-        content['user'] = new_user.data
+        user_serializer = UserSerializerForContentList(users[user_id])
+        content['user'] = user_serializer.data
+
     response = Response(serializer.data)
     return response
 
@@ -60,7 +68,9 @@ def content_list(request):
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
 def content_create(request):
-    prompt = request.data.get("prompt")
+    raw_prompt = request.data.get("prompt")
+    prompt = exec_deepl(raw_prompt)
+    print(prompt)
     category_id = request.data.get('category_id')
     deliverables = ''
     if category_id == ContentCategory.IMAGE.value:
@@ -81,7 +91,7 @@ def content_create(request):
         category_id = ContentCategory.IMAGE.value
         deliverables = ''
     new_content = {
-        "prompt": prompt,
+        "prompt": raw_prompt,
         "deliverables": deliverables,
         "category_id": category_id,
         "user": request.user.id,
@@ -99,21 +109,21 @@ def content_create(request):
 @authentication_classes([JWTAuthentication, ])
 @permission_classes([IsAuthenticated, ])
 def user_content_list(request):
-    contents = Content.objects.filter(user_id=request.user.id).all()
+    # Directly filter by the user
+    contents = Content.objects.filter(user=request.user)
+
     paginator = PageNumberPagination()
     paginated_contents = paginator.paginate_queryset(contents, request)
     serializer = ContentSerializer(paginated_contents, many=True)
-    user_ids = [content.user_id for content in contents]
-    users = User.objects.filter(id__in=user_ids)
-    user_serializer = UserSerializerForContentList(users, many=True)
+
+    # As all the content is for the same user, just serialize the user once
+    user_serializer = UserSerializerForContentList(request.user)
+    user_data = user_serializer.data
+
     for content in serializer.data:
-        user_id = content['user']
-        index = user_ids.index(user_id)
-        if index < len(user_serializer.data):
-            new_user = user_serializer.data[index]
-            content['user'] = new_user
-    response = Response(serializer.data)
-    return response
+        content['user'] = user_data
+
+    return Response(serializer.data)
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
