@@ -7,6 +7,7 @@ class User(models.Model):
     username = models.CharField(max_length=30, blank=True, null=True, validators=[RegexValidator(r'^[a-zA-Z0-9]+$')], unique=True)
     purple = models.BooleanField(default=False)
     bio = models.TextField(max_length=80, blank=True, null=True)
+    # link = models.URLField(blank=True)
     image = models.TextField(blank=True, null=True)
     email = models.EmailField(unique=True, blank=False, null=False)
     password = models.CharField(max_length=128, blank=False, null=False, default='')
