@@ -14,6 +14,7 @@ numpy
 stability-sdk
 ipython
 openai
+requests
 # sentence-transformers
 # httpx
 # tensorflow
