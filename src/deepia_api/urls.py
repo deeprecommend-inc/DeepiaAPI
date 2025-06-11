@@ -10,5 +10,7 @@ urlpatterns = [
     path('api/user/', include(user_urls)),
     path('api/like/', include(like_urls)),
     path('api/current_user/', views.current_user, name="current-user"),
-    path('api/auth/', views.login, name="login"),
+    path('api/auth/login/', views.login, name="login"),
+    path('api/auth/register/', views.register, name="register"),
+    path('api/auth/verify/<str:token>/', views.verify_email, name="verify-email"),
 ]

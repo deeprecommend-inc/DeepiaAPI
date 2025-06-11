@@ -1,20 +1,25 @@
-FROM python:3.9
+FROM python:3.9-slim
 
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir /code
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir /code
 WORKDIR /code
 
-ADD requirements.txt /code/
+# Copy requirements first for better caching
+COPY requirements.txt /code/
 
-RUN pip3 cache purge
+# Install Python dependencies
+RUN pip3 install --no-cache-dir --upgrade pip && \
+    pip3 install --no-cache-dir -r requirements.txt
 
-RUN pip3 install --upgrade pip
-
-RUN pip3 install -r requirements.txt
-
-ADD . /code/
+# Copy application code
+COPY . /code/
 
 CMD python3 manage.py makemigrations && python3 manage.py migrate
 

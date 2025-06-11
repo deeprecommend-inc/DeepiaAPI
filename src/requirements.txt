@@ -1,7 +1,7 @@
 Django==3.2.8
 djangorestframework
-psycopg2
-uwsgi
+psycopg2-binary
+# uwsgi
 gunicorn
 django-cors-headers
 bcrypt
