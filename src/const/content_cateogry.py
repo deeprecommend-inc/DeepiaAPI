@@ -6,3 +6,4 @@ class ContentCategory(Enum):
     MUSIC = 2
     VIDEO = 3
     SPACE = 4
+    WORKFLOW = 5

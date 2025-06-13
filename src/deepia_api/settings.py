@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'content',
     'user',
+    'comment',
     'rest_framework',
     'sslserver',
 ]

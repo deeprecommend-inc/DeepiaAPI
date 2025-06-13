@@ -94,6 +94,7 @@ def content_list(request):
             'video': ContentCategory.VIDEO.value,
             'audio': ContentCategory.MUSIC.value,
             'faceswap': ContentCategory.IMAGE.value,
+            'workflow': ContentCategory.WORKFLOW.value,
         }
         
         category_id = category_mapping.get(content_type, ContentCategory.IMAGE.value)
@@ -196,16 +197,24 @@ def content_detail(request, pk):
         serializer = ContentSerializer(content)
         return Response(serializer.data)
     
-    # if request.method == 'PUT':
-    #     new_content = {
-    #         "prompt": request.data['prompt'],
-    #         "user_id": request.user.id,
-    #     }
-    #     serializer = ContentSerializer(content, data=new_content)
-    #     if serializer.is_valid():
-    #         serializer.save()
-    #         return Response(serializer.data)
-    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    if request.method == 'PUT':
+        # Update content
+        prompt = request.data.get('prompt', content.prompt)
+        deliverables = request.data.get('deliverables', content.deliverables)
+        
+        # Only allow content owner to edit
+        if content.user.id != request.user.id:
+            return Response(
+                {'error': 'この投稿を編集する権限がありません'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        content.prompt = prompt
+        content.deliverables = deliverables
+        content.save()
+        
+        serializer = ContentSerializer(content)
+        return Response(serializer.data)
 
     if request.method == 'DELETE':
         content.delete()
@@ -357,3 +366,142 @@ def piapi_status(request, generation_id):
             {'error': 'サーバーエラーが発生しました'},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
+
+
+@api_view(['POST'])
+@authentication_classes([JWTAuthentication, ])
+@permission_classes([IsAuthenticated, ])
+def workflow_save(request):
+    """
+    Workflowをコンテンツとして保存
+    """
+    try:
+        data = request.data
+        workflow_name = data.get('name', 'Untitled Workflow')
+        workflow_description = data.get('description', '')
+        nodes = data.get('nodes', [])
+        edges = data.get('edges', [])
+        
+        if not nodes:
+            return Response(
+                {'error': 'ワークフローが空です'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Workflow data structure
+        workflow_data = {
+            'name': workflow_name,
+            'description': workflow_description,
+            'nodes': nodes,
+            'edges': edges,
+            'version': '1.0',
+            'created_at': data.get('created_at'),
+            'updated_at': data.get('updated_at')
+        }
+        
+        # Save as content
+        new_content = {
+            "prompt": workflow_name,
+            "deliverables": workflow_description,
+            "category_id": ContentCategory.WORKFLOW.value,
+            "user": request.user.id,
+            "workflow_data": workflow_data,
+        }
+        
+        serializer = ContentSerializer(data=new_content)
+        if serializer.is_valid():
+            saved = serializer.save()
+            
+            # Return response with workflow data
+            response_data = serializer.data
+            response_data['workflow_data'] = workflow_data
+            
+            return Response(response_data, status=status.HTTP_201_CREATED)
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            
+    except Exception as e:
+        logger.error(f"Workflow save error: {str(e)}")
+        return Response(
+            {'error': 'ワークフローの保存に失敗しました'},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['GET'])
+@authentication_classes([JWTAuthentication, ])
+@permission_classes([IsAuthenticated, ])
+def workflow_list(request):
+    """
+    ユーザーのワークフロー一覧を取得
+    """
+    try:
+        workflows = Content.objects.filter(
+            user=request.user, 
+            category_id=ContentCategory.WORKFLOW.value
+        ).order_by('-created_at')
+        
+        serializer = ContentSerializer(workflows, many=True)
+        return Response(serializer.data)
+        
+    except Exception as e:
+        logger.error(f"Workflow list error: {str(e)}")
+        return Response(
+            {'error': 'ワークフロー一覧の取得に失敗しました'},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )
+
+
+@api_view(['GET', 'PUT', 'DELETE'])
+@authentication_classes([JWTAuthentication, ])
+@permission_classes([IsAuthenticated, ])
+def workflow_detail(request, pk):
+    """
+    ワークフローの詳細取得・更新・削除
+    """
+    try:
+        workflow = Content.objects.get(
+            pk=pk, 
+            category_id=ContentCategory.WORKFLOW.value,
+            user=request.user
+        )
+    except Content.DoesNotExist:
+        return Response(
+            {'error': 'ワークフローが見つかりません'},
+            status=status.HTTP_404_NOT_FOUND
+        )
+
+    if request.method == 'GET':
+        serializer = ContentSerializer(workflow)
+        return Response(serializer.data)
+    
+    elif request.method == 'PUT':
+        data = request.data
+        workflow_name = data.get('name', workflow.prompt)
+        workflow_description = data.get('description', workflow.deliverables)
+        nodes = data.get('nodes', [])
+        edges = data.get('edges', [])
+        
+        # Update workflow data
+        workflow_data = {
+            'name': workflow_name,
+            'description': workflow_description,
+            'nodes': nodes,
+            'edges': edges,
+            'version': '1.0',
+            'created_at': workflow.workflow_data.get('created_at') if workflow.workflow_data else None,
+            'updated_at': data.get('updated_at')
+        }
+        
+        # Update content
+        workflow.prompt = workflow_name
+        workflow.deliverables = workflow_description
+        workflow.workflow_data = workflow_data
+        workflow.save()
+        
+        serializer = ContentSerializer(workflow)
+        return Response(serializer.data)
+    
+    elif request.method == 'DELETE':
+        workflow.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
